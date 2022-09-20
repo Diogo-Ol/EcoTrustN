@@ -1,5 +1,7 @@
 @media (min-width:0px){
-
+    #botao__mobile{
+        display: none;
+    }
     .cabecalho{
         display: flex;
         flex-direction: row;
@@ -65,4 +67,138 @@
         border-bottom: 2px solid var(--black);
     }
     
+}
+@media (max-width:1024px){
+    #botao__mobile{
+        display: flex;
+    }
+    .cabecalho{
+        padding-left: 1.438rem;
+        padding-right: 1.438rem;
+        padding-bottom: 2rem;
+
+        align-items: center;
+    }
+    .secao__lista__links__cabecalho{
+        display: none;
+    }
+    .botao__agenda__cabecalho{
+        display: none;
+    }
+    .botao__hamburguer__mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+        background-color: transparent;
+    }
+
+    .secao__modal__menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: stretch;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 100;
+        overflow: hidden;
+
+        animation: animaBackModal .3s ease-in-out forwards ;
+    }
+    @keyframes animaBackModal{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes animaModalMenu{
+        0%{
+            opacity: 0;
+            right: -40%;
+        }
+        100%{
+            opacity: 1;
+            right: 0%;
+        }
+    }
+    .container__conteudo__modal__menu{
+        width: 87vw;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+
+        margin: 0%;
+
+        background-color: var(--white);
+
+        position: relative;
+        right: -15%;
+
+        padding-top: 2.063rem;
+        padding-bottom: 2.438rem;
+
+        animation: animaModalMenu .3s ease-in-out forwards ;
+    }
+    .container__botao__modal__menu{
+        width: 72vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .botao__modal__menu{
+        border: none;
+        background-color: transparent;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .lista__modal__menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.125rem;
+
+        width: 72vw;
+    }
+    .item__lista__modal__menu{
+
+    }
+    .link__lista__modal__menu{
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--regular);
+        line-height: var(--line-28);
+        color: var(--black);
+    }
+    #botao__agendar__menu{
+        width: 72vw;
+
+        justify-content: center;
+    }
+    .secao__lista__redes__rodape{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4rem;
+
+        width: 87vw;
+
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+        padding-top: 2.625rem;
+    }
 }

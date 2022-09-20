@@ -168,3 +168,72 @@
         opacity: 1;
     }
 }
+@media (max-width:1024px){
+    .secao__depoimentos{
+        padding-top: 3rem;
+        padding-bottom: 5.688rem;
+        gap: 4rem;
+    }
+    .secao__container__carousel{
+        width: 100vw;
+        justify-content: center;
+    }
+    .secao__cabecalho__depoimentos{
+        width: 85vw;
+    }
+    .titulo__cabecalho__depoimentos{
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+
+        width: 61vw;
+    }
+    #carousel__indicadores__depoimentos{
+        display: none;
+    }
+    .botao__carrousel-depoimentos{
+        display: none;
+    }
+    .container__carousel{
+        width: 85vw;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        user-select: none;
+    }
+    .container__carousel::-webkit-scrollbar{
+        display: none;
+    }
+    .lista__depoimentos{
+        width: 340vw;
+    }
+    .item__lista__depoimentos{
+        width: 85vw;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        scroll-snap-align: start;
+        scroll-snap-type: y mandatory;
+    }
+    .secao__conteudo__lista__depoimentos{
+        text-align: center;
+        align-items: center;
+    }
+    .imagem__depoimento{
+        width: 4.625rem;
+        height: 4.625rem;
+    }
+    .nome__conteudo__lista__depoimentos{
+        font-size: var(--font-18);
+        line-height: var(--line-22);
+        font-weight: var(--regular);
+
+    }
+    .subtitulo__conteudo__lista__depoimentos{
+        font-size: var(--font-12);
+        line-height: var(--line-15);
+        font-weight: var(--semi-bold);
+    }
+    .descricao__conteudo__lista__depoimentos{
+        font-size: var(--font-16);
+        line-height: var(--line-25);
+    }
+}

@@ -153,6 +153,12 @@
         margin: 0%;
     }
     /*-------------TABS-COMO-----------*/
+    #secao__tabs__desktop{
+        display: flex;
+    }
+    #secao__tabs__mobile{
+        display: none;
+    }
     .secao__como{
         display: flex;
         flex-direction: column;

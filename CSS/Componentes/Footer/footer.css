@@ -139,3 +139,79 @@
         text-decoration: underline;
     }
 }
+@media (max-width: 1024px){
+    .secao__banner__footer{
+        padding-top: 3rem;
+        padding-left: 1.438rem;
+        gap: 3rem;
+
+        height: 32.813rem;
+
+        background-position: center bottom;
+
+        background-size: 145vw auto;
+    }
+    .titulo__banner__footer{
+        width: 72vw;
+        font-size: var(--font-30);
+        font-weight: var(--medium);
+        line-height: var(--line-40);
+
+    }
+    #botao__agenda__footer{
+        width: 87vw;
+
+        justify-content: center;
+    }
+    #seta__vetor__footer{
+        display: none;
+    }
+    .rodape{
+        align-items: center;
+        text-align: center;
+
+        padding-bottom: 5.188rem;
+    }
+    .address__rodape{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4rem;
+        width: 87vw;
+    }
+    .section__redes__rodape{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 87vw;
+    }
+    .botao__up__pagina{
+        display: none;
+    }
+    .secao__links__rodape{
+        width: 87vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lista__links__rodape{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .secao__copyrigth{
+        width: 87vw;
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2.5rem;
+    }
+    .link__copyright{
+        font-size: var(--font-15);
+        font-weight: var(--regular);
+        line-height: var(--line-18);
+    }
+    .texto__copyright{
+        font-size: var(--font-14);
+        font-weight: var(--regular);
+    }
+}
