@@ -18,6 +18,7 @@
         <meta content="" name="twitter:image">
         <link rel="stylesheet" href="./CSS/Base/index.css">
         <link rel="stylesheet" href="./CSS/Paginas/Funcionalidades/funcionalidades.css">
+        <link rel="stylesheet" href="./CSS/Paginas/Funcionalidades/funcionalidadesResponsivo.css">
         <link rel="stylesheet" href="./CSS/Componentes/Carousel/carousel.css">
         <link rel="stylesheet" href="./CSS/Paginas/Funcionalidades/tabs.css">
         <title>Funcionalidades | EcoTrust</title>
@@ -290,7 +291,7 @@
 
                 </button>
 
-                <section class="secao__lista__redes__rodape">
+                <section class="secao__lista__redes__rodape__menu">
 
                     <a href="#" class="link__lista__redes__rodape">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -411,11 +412,11 @@
                         <p class="descricao__secao__banner">Com informações relevantes sobre as vulnerabilidades encontradas, a EcoTrust potencializa a atuação das equipes de segurança digital nas empresas.</p>
 
 
-                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="abrirModalAgendamento()"> 
+                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="abrirModalAgendamento()" id="botao__agenda__banner"> 
 
                             Agendar uma demo
     
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="seta__agenda__banner" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="white"/>
                             </svg>
                                 
@@ -446,7 +447,7 @@
 
                 <section class="secao__conteudo__tabs__funcionalidades tabcontent" id="manager">
 
-                    <section class="secao__tabs__conteudo__funcionalidades">
+                    <section class="secao__tabs__conteudo__funcionalidades" id="secao__tabs__desktop">
 
                         <div class="cabecalho__secao___tabs__conteudo__funcionalidades">
     
@@ -861,12 +862,228 @@
 
                     </section>
 
+                    <ul class="lista__conteudos__tabs__mobile">
 
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1.33325C5.3725 1.33325 0 6.70575 0 13.3333C0 15.5333 0.59375 17.5941 1.6275 19.3666C1.86125 19.7674 2.30667 19.9999 2.77083 19.9999H21.2292C21.6933 19.9999 22.1388 19.7674 22.3725 19.3666C23.4062 17.5941 24 15.5333 24 13.3333C24 6.70575 18.6275 1.33325 12 1.33325ZM12 3.99992C12.6129 3.99992 13.1075 4.422 13.2633 4.98534C13.2171 5.0795 13.1533 5.16159 13.1196 5.26325L12.7354 6.41617C12.5217 6.56159 12.2783 6.66659 12.0004 6.66659C11.2642 6.66659 10.6671 6.0695 10.6671 5.33325C10.6671 4.597 11.2638 3.99992 12 3.99992ZM4 15.9999C3.26375 15.9999 2.66667 15.4028 2.66667 14.6666C2.66667 13.9303 3.26375 13.3333 4 13.3333C4.73625 13.3333 5.33333 13.9303 5.33333 14.6666C5.33333 15.4028 4.73625 15.9999 4 15.9999ZM6 9.33325C5.26375 9.33325 4.66667 8.73617 4.66667 7.99992C4.66667 7.26367 5.26375 6.66659 6 6.66659C6.73625 6.66659 7.33333 7.26367 7.33333 7.99992C7.33333 8.73617 6.73625 9.33325 6 9.33325ZM16.2821 6.31617L13.7267 13.9828C14.2971 14.472 14.6667 15.1891 14.6667 15.9999C14.6667 16.4883 14.5258 16.9395 14.2967 17.3333H9.70333C9.47417 16.9395 9.33333 16.4883 9.33333 15.9999C9.33333 14.5858 10.4375 13.4403 11.8292 13.3503L14.385 5.68325C14.5588 5.15992 15.1238 4.87284 15.65 5.05117C16.1737 5.22575 16.4562 5.79242 16.2821 6.31617ZM16.8929 8.6995L17.5396 6.75992C17.6842 6.70617 17.8367 6.667 18 6.667C18.7362 6.667 19.3333 7.26409 19.3333 8.00034C19.3333 8.73659 18.7362 9.33367 18 9.33367C17.5258 9.33325 17.1296 9.072 16.8929 8.6995ZM20 15.9999C19.2638 15.9999 18.6667 15.4028 18.6667 14.6666C18.6667 13.9303 19.2638 13.3333 20 13.3333C20.7362 13.3333 21.3333 13.9303 21.3333 14.6666C21.3333 15.4028 20.7362 15.9999 20 15.9999Z" fill="black"/>
+                                        </svg>
+                                    Dashboard
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Gráficos e indicadores contextualizam os riscos mapeados pelos sensores e destacam as ocorrências por grau de severidade. </p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.4375 10.5H22.0142C21.3621 6.10898 17.891 2.63794 13.5 1.98581V0.5625C13.5 0.251859 13.2481 0 12.9375 0H11.0625C10.7519 0 10.5 0.251859 10.5 0.5625V1.98581C6.10898 2.63794 2.63794 6.10898 1.98581 10.5H0.5625C0.251859 10.5 0 10.7519 0 11.0625V12.9375C0 13.2481 0.251859 13.5 0.5625 13.5H1.98581C2.63794 17.891 6.10898 21.3621 10.5 22.0142V23.4375C10.5 23.7481 10.7519 24 11.0625 24H12.9375C13.2481 24 13.5 23.7481 13.5 23.4375V22.0142C17.891 21.3621 21.3621 17.891 22.0142 13.5H23.4375C23.7481 13.5 24 13.2481 24 12.9375V11.0625C24 10.7519 23.7481 10.5 23.4375 10.5ZM13.5 18.9672V17.0625C13.5 16.7519 13.2481 16.5 12.9375 16.5H11.0625C10.7519 16.5 10.5 16.7519 10.5 17.0625V18.9672C7.77309 18.3859 5.61483 16.2301 5.03278 13.5H6.9375C7.24814 13.5 7.5 13.2481 7.5 12.9375V11.0625C7.5 10.7519 7.24814 10.5 6.9375 10.5H5.03278C5.61412 7.77309 7.76986 5.61483 10.5 5.03278V6.9375C10.5 7.24814 10.7519 7.5 11.0625 7.5H12.9375C13.2481 7.5 13.5 7.24814 13.5 6.9375V5.03278C16.2269 5.61412 18.3852 7.76986 18.9672 10.5H17.0625C16.7519 10.5 16.5 10.7519 16.5 11.0625V12.9375C16.5 13.2481 16.7519 13.5 17.0625 13.5H18.9672C18.3859 16.2269 16.2301 18.3852 13.5 18.9672ZM13.5 12C13.5 12.8284 12.8284 13.5 12 13.5C11.1716 13.5 10.5 12.8284 10.5 12C10.5 11.1716 11.1716 10.5 12 10.5C12.8284 10.5 13.5 11.1716 13.5 12Z" fill="black"/>
+                                        </svg>
+                                        
+                                    Ativos
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Cadastre ativos de forma manual ou automatizada. Valor financeiro em risco e criticidade são fatores considerados na análise de risco. </p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2724_4034)">
+                                        <path d="M23.6737 20.7497L18.9998 16.0767C18.7889 15.8658 18.503 15.7486 18.203 15.7486H17.4389C18.7327 14.0939 19.5014 12.0131 19.5014 9.74906C19.5014 4.36359 15.1369 0 9.75094 0C4.365 0 0 4.36359 0 9.74906C0 15.1345 4.36453 19.4981 9.75094 19.4981C12.015 19.4981 14.0967 18.7294 15.7514 17.4356V18.1997C15.7514 18.4997 15.8686 18.7856 16.0795 18.9966L20.7534 23.6695C21.1941 24.1102 21.9066 24.1102 22.3425 23.6695L23.6691 22.343C24.1097 21.9023 24.1097 21.1903 23.6737 20.7497ZM9.75094 16.4981C6.0225 16.4981 3.00094 13.4822 3.00094 9.74906C3.00094 6.02109 6.01734 3 9.75094 3C13.4794 3 16.5009 6.01594 16.5009 9.74906C16.5009 13.477 13.4845 16.4981 9.75094 16.4981ZM9.75187 5.25C7.84031 5.25 6.29062 6.79922 6.29062 8.71078C6.29062 10.2558 8.55281 13.0725 9.41953 14.0948C9.46018 14.1435 9.51101 14.1826 9.56844 14.2095C9.62586 14.2363 9.68848 14.2502 9.75187 14.2502C9.81527 14.2502 9.87788 14.2363 9.93531 14.2095C9.99273 14.1826 10.0436 14.1435 10.0842 14.0948C10.9509 13.0725 13.2131 10.2563 13.2131 8.71078C13.2131 6.79922 11.6634 5.25 9.75187 5.25ZM9.75187 9.75C9.13031 9.75 8.62687 9.24609 8.62687 8.625C8.62687 8.00344 9.13078 7.5 9.75187 7.5C10.373 7.5 10.8769 8.00344 10.8769 8.625C10.8769 9.24609 10.373 9.75 9.75187 9.75Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_2724_4034">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                    Ocorrências
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">As ocorrências são classificadas quanto aos vetores de risco e vulnerabilidades. A plataforma indica orientações de remediação e algumas referências técnicas.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2724_4049)">
+                                        <path d="M12 0.387207C5.37242 0.387207 0 5.75963 0 12.3872C0 19.0148 5.37242 24.3872 12 24.3872C18.6276 24.3872 24 19.0148 24 12.3872C24 5.75963 18.6276 0.387207 12 0.387207ZM12 21.2904C7.07952 21.2904 3.09677 17.3087 3.09677 12.3872C3.09677 7.46672 7.07855 3.48398 12 3.48398C16.9205 3.48398 20.9032 7.46576 20.9032 12.3872C20.9032 17.3077 16.9215 21.2904 12 21.2904ZM12 6.19366C8.57952 6.19366 5.80645 8.96672 5.80645 12.3872C5.80645 15.8077 8.57952 18.5808 12 18.5808C15.4205 18.5808 18.1935 15.8077 18.1935 12.3872C18.1935 8.96672 15.4205 6.19366 12 6.19366ZM12 15.484C10.2924 15.484 8.90323 14.0948 8.90323 12.3872C8.90323 10.6796 10.2924 9.29043 12 9.29043C13.7076 9.29043 15.0968 10.6796 15.0968 12.3872C15.0968 14.0948 13.7076 15.484 12 15.484Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_2724_4049">
+                                        <rect width="24" height="24.7742" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                    Scanners
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">A EcoTrust executa scans ativos, intrusivos e não intrusivos. Eles podem ter periodicidade pontual ou recorrente. </p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2724_4057)">
+                                        <path d="M23.3363 10.5898L19.0163 8.83203C18.8625 8.76953 18.5438 8.6875 18.1838 8.83203L13.8638 10.5898C13.4625 10.7539 13.2 11.1367 13.2 11.5625C13.2 15.9219 15.7763 18.9375 18.1838 19.918C18.5438 20.0625 18.8588 19.9805 19.0163 19.918C20.94 19.1367 24 16.4258 24 11.5625C24 11.1367 23.7375 10.7539 23.3363 10.5898ZM18.6 18.0625V10.6758L22.1813 12.1328C21.9713 15.5352 19.8975 17.4219 18.6 18.0625ZM8.4 10C11.0513 10 13.2 7.76172 13.2 5C13.2 2.23828 11.0513 0 8.4 0C5.74875 0 3.6 2.23828 3.6 5C3.6 7.76172 5.74875 10 8.4 10ZM12 11.5625C12 11.4648 12.03 11.375 12.0413 11.2812C11.9475 11.2773 11.8575 11.25 11.76 11.25H11.1337C10.3013 11.6484 9.375 11.875 8.4 11.875C7.425 11.875 6.5025 11.6484 5.66625 11.25H5.04C2.2575 11.25 0 13.6016 0 16.5V18.125C0 19.1602 0.80625 20 1.8 20H15C15.255 20 15.4988 19.9414 15.72 19.8438C13.695 18.168 12 15.2852 12 11.5625Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_2724_4057">
+                                        <rect width="24" height="20" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                    Políticas
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Acesso à biblioteca de políticas prontas para uso. Também é possível personalizar os scans, de acordo com o objetivo. </p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2724_4030)">
+                                        <path d="M14.318 21.684C14.6644 22.0261 14.608 22.626 14.1773 22.856C10.5345 24.8155 5.89331 24.2581 2.81746 21.1822C-0.25763 18.107 -0.815818 13.4702 1.1444 9.82292C1.37367 9.39659 1.97362 9.3402 2.31642 9.6823L7.79198 15.1579L9.07607 13.8738C9.04382 13.7515 9.00135 13.6394 9.00135 13.5075C9.00136 13.2108 9.08935 12.9208 9.2542 12.6741C9.41905 12.4274 9.65335 12.2351 9.92748 12.1216C10.2016 12.008 10.5032 11.9783 10.7942 12.0362C11.0852 12.0941 11.3526 12.237 11.5624 12.4468C11.7722 12.6566 11.915 12.9239 11.9729 13.2149C12.0308 13.5059 12.0011 13.8076 11.8875 14.0817C11.774 14.3558 11.5817 14.5901 11.335 14.7549C11.0883 14.9198 10.7982 15.0078 10.5015 15.0078C10.3704 15.0078 10.2576 14.966 10.136 14.933L8.85117 16.2179L14.318 21.684ZM23.9989 14.2063C24.0046 14.3086 23.9895 14.4109 23.9544 14.5071C23.9193 14.6033 23.8651 14.6913 23.7949 14.7659C23.7247 14.8404 23.6401 14.8999 23.5462 14.9407C23.4524 14.9816 23.3512 15.0029 23.2488 15.0034H21.7434C21.5531 15.0028 21.3702 14.9298 21.2318 14.7991C21.0935 14.6685 21.01 14.4901 20.9985 14.3001C20.6469 8.22894 15.7712 3.30636 9.70452 2.97819C9.51396 2.96804 9.33461 2.88492 9.20368 2.74608C9.07274 2.60724 9.00028 2.42333 9.00131 2.2325V0.751343C9.00172 0.648946 9.02298 0.547707 9.06378 0.45379C9.10459 0.359874 9.16408 0.275248 9.23864 0.205066C9.31321 0.134884 9.40128 0.0806158 9.49749 0.0455674C9.5937 0.010519 9.69604 -0.00457592 9.79827 0.00120201C17.4494 0.404139 23.6004 6.55512 23.9989 14.2063ZM19.4983 14.1924C19.5053 14.296 19.491 14.4 19.4562 14.4978C19.4214 14.5957 19.367 14.6854 19.2962 14.7614C19.2255 14.8374 19.1399 14.8981 19.0447 14.9397C18.9496 14.9813 18.8469 15.003 18.7431 15.0034H17.2334C17.0456 15.002 16.8651 14.9305 16.7273 14.803C16.5895 14.6755 16.5043 14.5011 16.4884 14.3141C16.1646 10.7042 13.2953 7.80266 9.69506 7.50669C9.50667 7.49318 9.3304 7.40883 9.20168 7.27062C9.07297 7.1324 9.00138 6.95057 9.00131 6.7617V5.25636C9.00128 5.15242 9.02268 5.04959 9.06416 4.95429C9.10565 4.85899 9.16634 4.77327 9.24243 4.70247C9.31853 4.63167 9.4084 4.57732 9.50644 4.5428C9.60448 4.50828 9.70858 4.49435 9.81224 4.50186C14.9743 4.90034 19.1042 9.03031 19.4983 14.1924Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_2724_4030">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                    Sensores
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Disponibilizamos vários sensores nativos, prontos para uso. Por outro lado, também integramos com sensores do mercado, como Tenable, Qualys e outros.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.44 10.5H1.68V19.5H1.44C1.25083 19.5002 1.06348 19.4616 0.888671 19.3863C0.71386 19.311 0.555027 19.2005 0.421265 19.0612C0.287504 18.9219 0.181443 18.7564 0.109156 18.5743C0.0368691 18.3922 -0.000224019 18.1971 1.01782e-06 18V12C-0.000224019 11.803 0.0368691 11.6078 0.109156 11.4257C0.181443 11.2436 0.287504 11.0782 0.421265 10.9388C0.555027 10.7995 0.71386 10.689 0.888671 10.6137C1.06348 10.5384 1.25083 10.4998 1.44 10.5ZM22.08 8.25V21C22.0793 21.7954 21.7756 22.558 21.2356 23.1205C20.6957 23.6829 19.9636 23.9992 19.2 24H4.8C4.03641 23.9992 3.3043 23.6829 2.76436 23.1205C2.22442 22.558 1.92075 21.7954 1.92 21V8.25C1.91985 7.7575 2.01286 7.26979 2.19372 6.81475C2.37458 6.3597 2.63975 5.94624 2.97407 5.59799C3.3084 5.24974 3.70532 4.97352 4.14216 4.78513C4.579 4.59673 5.0472 4.49984 5.52 4.5H10.56V1.5C10.56 1.10218 10.7117 0.720644 10.9818 0.43934C11.2518 0.158035 11.6181 0 12 0C12.3819 0 12.7482 0.158035 13.0182 0.43934C13.2883 0.720644 13.44 1.10218 13.44 1.5V4.5H18.48C18.9528 4.49984 19.421 4.59673 19.8578 4.78513C20.2947 4.97352 20.6916 5.24974 21.0259 5.59799C21.3603 5.94624 21.6254 6.3597 21.8063 6.81475C21.9871 7.26979 22.0802 7.7575 22.08 8.25ZM9.48 12C9.48 11.6292 9.37443 11.2666 9.17665 10.9583C8.97886 10.65 8.69774 10.4096 8.36883 10.2677C8.03992 10.1258 7.678 10.0887 7.32884 10.161C6.97967 10.2334 6.65894 10.412 6.40721 10.6742C6.15547 10.9364 5.98404 11.2705 5.91459 11.6342C5.84513 11.9979 5.88078 12.3749 6.01702 12.7175C6.15326 13.0601 6.38397 13.353 6.67997 13.559C6.97598 13.765 7.32399 13.875 7.68 13.875C7.91639 13.875 8.15046 13.8265 8.36885 13.7323C8.58725 13.6381 8.78568 13.5 8.95283 13.3259C9.11998 13.1518 9.25257 12.945 9.34302 12.7176C9.43347 12.4901 9.48002 12.2462 9.48 12ZM9.12 18H6.24V19.5H9.12V18ZM13.44 18H10.56V19.5H13.44V18ZM18.12 12C18.12 11.6292 18.0144 11.2666 17.8166 10.9583C17.6189 10.65 17.3377 10.4096 17.0088 10.2677C16.6799 10.1258 16.318 10.0887 15.9688 10.161C15.6197 10.2334 15.2989 10.412 15.0472 10.6742C14.7955 10.9364 14.624 11.2705 14.5546 11.6342C14.4851 11.9979 14.5208 12.3749 14.657 12.7175C14.7933 13.0601 15.024 13.353 15.32 13.559C15.616 13.765 15.964 13.875 16.32 13.875C16.5564 13.875 16.7905 13.8265 17.0089 13.7323C17.2272 13.6381 17.4257 13.5 17.5928 13.3259C17.76 13.1518 17.8926 12.945 17.983 12.7176C18.0735 12.4901 18.12 12.2462 18.12 12ZM17.76 18H14.88V19.5H17.76V18ZM24 12V18C24.0002 18.1971 23.9631 18.3922 23.8908 18.5743C23.8186 18.7564 23.7125 18.9219 23.5787 19.0612C23.445 19.2005 23.2861 19.311 23.1113 19.3863C22.9365 19.4616 22.7492 19.5002 22.56 19.5H22.32V10.5H22.56C22.7492 10.4998 22.9365 10.5384 23.1113 10.6137C23.2861 10.689 23.445 10.7995 23.5787 10.9388C23.7125 11.0782 23.8186 11.2436 23.8908 11.4257C23.9631 11.6078 24.0002 11.803 24 12Z" fill="black"/>
+                                        </svg>
+                                        
+                                    Automações
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">As principais informações de uma ocorrência podem ser gatilhos de uma automação para, por exemplo, notificar os canais da empresa. </p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6 15H17.4C17.7 15 18 14.7 18 14.4V8.1C18 7.8 17.7 7.5 17.4 7.5H15.6C15.3 7.5 15 7.8 15 8.1V14.4C15 14.7 15.3 15 15.6 15ZM20.1 15H21.9C22.2 15 22.5 14.7 22.5 14.4V3.6C22.5 3.3 22.2 3 21.9 3H20.1C19.8 3 19.5 3.3 19.5 3.6V14.4C19.5 14.7 19.8 15 20.1 15ZM6.6 15H8.4C8.7 15 9 14.7 9 14.4V11.1C9 10.8 8.7 10.5 8.4 10.5H6.6C6.3 10.5 6 10.8 6 11.1V14.4C6 14.7 6.3 15 6.6 15ZM11.1 15H12.9C13.2 15 13.5 14.7 13.5 14.4V5.1C13.5 4.8 13.2 4.5 12.9 4.5H11.1C10.8 4.5 10.5 4.8 10.5 5.1V14.4C10.5 14.7 10.8 15 11.1 15ZM23.25 18H3V3.75C3 3.33562 2.66438 3 2.25 3H0.75C0.335625 3 0 3.33562 0 3.75V19.5C0 20.3283 0.671719 21 1.5 21H23.25C23.6644 21 24 20.6644 24 20.25V18.75C24 18.3356 23.6644 18 23.25 18Z" fill="black"/>
+                                        </svg>
+                                        
+                                    Relatórios
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Relatórios técnicos e executivos reúnem as principais informações. Um glossário técnico explica os termos mais específicos.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+                    
+
+                    </ul>
+                    
+                    <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" id="botao__agenda__tabs__funcionalidades__mobile" onclick="abrirModalAgendamento()"> 
+
+                        Agendar uma demo
+
+                        <svg id="seta__agenda_tabs__mobile" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="white"/>
+                        </svg>
+                            
+
+                    </button>
                 </section>
 
                 <section class="secao__conteudo__tabs__funcionalidades tabcontent" id="sensors">
 
-                    <section class="secao__tabs__conteudo__funcionalidades">
+                    <section class="secao__tabs__conteudo__funcionalidades" id="secao__tabs__desktop">
 
                         <div class="cabecalho__secao___tabs__conteudo__funcionalidades">
     
@@ -1082,12 +1299,132 @@
 
                     </section>
 
+                    <ul class="lista__conteudos__tabs__mobile">
 
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                              
+                                    Network
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Utilizado em ativos IPv4 e IPv6, na descoberta de serviços expostos e na correlação de vulnerabilidades encontradas com Mitre, NIST e Vulners.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    WebApp
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Faz testes de aplicações web a partir de análises dinâmicas e estáticas (DAST e SAST) para identificar falhas de front-end e back-end. </p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Infra
+                                    
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">É utilizado em firewalls, servidores, smartphones, IoT's, estações de trabalho e outros, na busca por vulnerabilidades e configurações ineficientes ou inseguras.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Certificados
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Exclusivo para certificados SSL/TLS, nas versões 1, 2 e 3, para testar falhas, checar se estão válidos e verificar a conformidade com a especificação RFC 5246.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    DNS
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Mapeia a superfície de ataque numa zona DNS/ FQDN, trazendo os subdomínios e identificando riscos como o “Domain Takeover”.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Malware
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Indicado para verificar a reputação e a confiabilidade de um domínio ou FQDN. Utiliza a base do VirusTotal no cálculo de WOT (rede de confiança).</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                    </ul>
+                    
+                    <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" id="botao__agenda__tabs__funcionalidades__mobile" onclick="abrirModalAgendamento()"> 
+
+                        Agendar uma demo
+
+                        <svg id="seta__agenda_tabs__mobile" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="white"/>
+                        </svg>
+                            
+
+                    </button>
                 </section>
 
                 <section class="secao__conteudo__tabs__funcionalidades tabcontent" id="connect">
 
-                    <section class="secao__tabs__conteudo__funcionalidades">
+                    <section class="secao__tabs__conteudo__funcionalidades" id="secao__tabs__desktop">
 
                         <div class="cabecalho__secao___tabs__conteudo__funcionalidades">
     
@@ -1344,7 +1681,161 @@
 
                     </section>
 
+                    <ul class="lista__conteudos__tabs__mobile">
 
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Conexão local
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Múltiplos sensores em ambientes locais para identificar os riscos em infraestruturas críticas, aplicações web ou nuvens, através de microsserviços em containers.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Secure WebSocket
+
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Protocolo utilizado na comunicação dos sensores em ambientes locais, através da tecnologia Reverse Port Forwarding.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Alta compatibilidade
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Os sensores do EcoTrust Connect podem ser provisionados em orquestradores de containers abertos, como o Docker Desktop e Podman ou em nuvens públicas, como AWS, Azure e Google Cloud.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Multiambiente
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Provisione sensores de scans para a descoberta de vulnerabilidades em múltiplos e distintos ambientes
+                                    de rede ou entre clientes.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Agentless
+
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">O EcoTrust Connect está disponível nos containers de sensores de scan, dispensando o uso de agentes, servidores ou máquinas virtuais.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Setupless
+                                
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Execute um único comando para provisionar os sensores (Pull, Active, Scan), sem nenhuma configuração prévia necessária.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+
+                                    Repositório CyberApp
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Disponibilizamos um repositório de sensores e APIs para scans de vulnerabilidades no Docker Hub. Através de comandos como Run e Pull, é possível provisionar sensores.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+
+                        <section class="secao__info__tabs__conteudo__funcionalidades">
+
+                            <div class="container__info__tabs__conteudo__funcionalidades">
+
+                                <h6 class="titulo__info__tabs__conteudo__funcionalidades">
+                                    Sensores Connect
+                                </h6>
+
+                                <p class="descricao__info__tabs__conteudo__funcionalidades">Entre os sensores nativos disponibilizados pela plataforma, alguns estão implementados diretamente no EcoTrust Connect: Network, WebApp e Nessus API.</p>
+
+                                
+
+                            </div>
+
+                        </section>
+                    
+
+                    </ul>
+                    
+                    <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" id="botao__agenda__tabs__funcionalidades__mobile" onclick="abrirModalAgendamento()"> 
+
+                        Agendar uma demo
+
+                        <svg id="seta__agenda_tabs__mobile" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="white"/>
+                        </svg>
+                            
+
+                    </button>
                 </section>
 
             </section>
@@ -1461,7 +1952,7 @@
 
                         Agendar uma demo
         
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg id="seta__api__mobile" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="black"/>
                         </svg>
                                 
@@ -1698,6 +2189,7 @@
     <script src="./Componentes/Funcionalidades/tabConteudo3.js" type="text/javascript"></script>
     <script src="./Componentes/Funcionalidades/tabsVetores.js" type="text/javascript"></script>
     <script src="./Componentes/abreMenu.js" type="text/javascript"></script>
+    <script src="./Componentes/Funcionalidades/mouseGrabTabs.js" type="text/javascript"></script>
     </body>
 
 </html>

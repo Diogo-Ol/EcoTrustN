@@ -1,0 +1,246 @@
+@media (max-width: 1024px){
+    .secao__banner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.875rem;
+
+        padding-top: 3rem;
+        padding-left: 1.563rem;
+        padding-bottom: 7.063rem;
+    }
+    .secao__conteudo__banner{
+        gap: 2.125rem;
+    }
+    .container__conteudo__banner{
+        gap: 1.625rem;
+    }
+    .secao__descricao__banner{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .titulo__secao__banner{
+        width: 85.65vw;
+        font-size: var(--font-30);
+        line-height: var(--line-40);
+
+        text-align: start;
+    }
+    .descricao__secao__banner{
+        width: 85.65vw;
+        font-size: var(--font-16);
+        line-height: var(--line-25)
+    }
+    #seta__agenda__banner{
+        display: none;
+    }
+    #botao__agenda__banner{
+        justify-content: center;
+        width: 85.65vw;
+    }
+    .secao__tabs__funcionalidades{
+        padding-bottom: 2.5rem;
+        padding-top: 3.375rem;
+    }
+    .titulo__tabs__funcionalidades{
+        width: 85.65vw;
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+
+        margin-bottom: 4rem;
+    }
+    .tabs__funcionalidades{
+        font-size: var(--font-13);
+        line-height: var(--line-17);
+
+    }
+    .lista__conteudos__tabs__mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 1.5rem;
+
+        width: 92.65vw;
+
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        margin-top: 2.25rem;
+
+        scrollbar-width: none;
+        user-select: none;
+    }
+    .lista__conteudos__tabs__mobile::-webkit-scrollbar{
+        display: none;
+    }
+    #secao__tabs__desktop{
+        display: none;
+    }
+    .secao__conteudo__tabs__funcionalidades{
+        flex-direction: column;
+        align-items: flex-end;
+
+        width: 100vw;
+    }
+    .cabecalho__secao___tabs__conteudo__funcionalidades{
+        display: none;
+    }
+    #seta__agenda_tabs__mobile{
+        display: none;
+    }
+    #botao__agenda__tabs__funcionalidades__mobile{
+        justify-content: center;
+        width: 85.65vw;
+        align-self: center;
+
+        
+        margin-top: 4.313rem;
+    }
+    .container__info__tabs__conteudo__funcionalidades{
+        padding-top: 2.083rem;
+
+        width: 84vw;
+    }
+    .titulo__info__tabs__conteudo__funcionalidades{
+        padding-bottom: 2.125rem;
+        padding-left: 1.5rem;
+
+        font-size: var(--font-18);
+        line-height: var(--line-22);
+
+        width: 84vw;
+    }
+    .descricao__info__tabs__conteudo__funcionalidades{
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        margin-bottom: 1.25rem;
+
+        font-size: var(--font-16);
+        line-height: var(--line-25);
+    }
+    .secao__beneficios{
+        padding-top: 4rem;
+    }
+    .titulo__beneficios{
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+
+        text-align: center;
+
+        width: 64.65vw;
+
+        margin-bottom: 3.125rem;
+    }
+    .secao__botoes__caroussel__beneficios{
+        display: none;
+    }
+    .container__caroussel__beneficios{
+        overflow-x: scroll;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+    }
+    .container__caroussel__beneficios::-webkit-scrollbar{
+        display: none;
+    }
+    .lista__caroussel__beneficios{
+        align-items: stretch;
+        gap: 2rem;
+    }
+    .item__lista__caroussel__beneficios{
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        background-color: #1A1B1E;
+
+        padding-top: 2rem;
+    }
+    .container__conteudo__item__lista__carrousel__beneficios {
+
+        align-items: center;
+
+    }
+    .titulo__item__lista__caroussel__beneficios{
+        font-size: var(--font-18);
+        line-height: var(--line-28);
+
+        width: 62.65vw;
+    }
+    .descricao__item__lista__caroussel__beneficios{
+        line-height: var(--line-20);
+
+        width: 62.65vw;
+    }
+    .imagem__item__lista__caroussel__beneficios{
+        width: 93.65vw;
+    }
+    .secao__conteudo__api{
+        padding-top: 2rem;
+        padding-left: 1.4rem;
+        padding-right: 2.313rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        gap: 2.5rem;
+        height: 32.75rem;
+
+        width: 85vw;
+
+        background-position: center bottom;
+        background-size: 120vw auto;
+    }
+    .container__conteudo__api{
+        flex-direction: column;
+        align-items: flex-start;    
+        gap: 1.5rem;
+    }
+    .titulo__conteudo__api{
+        width: 72.65vw;
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+    }
+    .descricao__conteudo__api{
+        margin: 0%;
+
+        width: 72.65vw;
+        font-size: var(--font-16);
+        line-height: var(--line-25);
+    }
+    .span__descricao__api__mobile{
+        display: none;
+    }
+    #botao__agenda__api{
+        width: 73.65vw;
+        justify-content: center;
+
+    }
+    #seta__api__mobile{
+        display: none;
+    }
+    .secao__praticas{
+        gap: 4.688rem;
+
+        padding-top: 3.75rem;
+        padding-bottom: 4.969rem;
+    }
+    .titulo__praticas{
+        text-align: center;
+
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+
+        width: 85vw;
+
+        
+    }
+    .lista__praticas{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        gap: 2rem;
+        row-gap: 3rem;
+    }
+}

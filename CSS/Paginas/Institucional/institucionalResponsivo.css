@@ -1,0 +1,283 @@
+@media (max-width: 1024px){
+    #seta__banner{
+        display: none;
+    }
+    .secao__banner{
+        height: 40.25rem;
+    }
+    .container__conteudo__banner{
+        width: 85.65vw;
+    }
+    .secao__conteudo__banner{
+        flex-direction: column;
+        align-items: center;
+        width: 85.65vw;
+    }
+    .titulo__secao__banner{
+        width: 85.65vw;
+        font-size: var(--font-30);
+        line-height: var(--line-40)
+    }
+    .descricao__secao__banner{
+        width: 85.65vw;
+        font-size: var(--font-16);
+        line-height: var(--line-25)
+    }
+    #botao__agenda__banner{
+        width: 85.65vw;
+        justify-content: center;
+    }
+    #seta__agenda__banner{
+        display: none;
+    }
+    .secao__banner__estrategias{
+        padding-top: 2.5rem;
+        padding-left: 1.438rem;
+        padding-right: 0rem;
+        align-items: flex-start;
+        gap: 4.75rem;
+    }
+    
+    .titulo__intro__banner__estrategias{
+        width: 64.65vw;
+        font-size: var(--font-24);
+        line-height: var(--line-35)
+    }
+    .descricao__intro__banner__estrategias{
+        display: none;
+    }
+    .lista__estrategias{
+        flex-direction: column;
+        align-items: center;
+        width: 88.65vw;
+        text-align: center;
+        gap: 3.313rem;
+    }
+    .item__lista__estrategias{
+        text-align: center;
+
+        width: 17.563rem;
+    }
+    .item__lista__estrategias:nth-child(1){
+        padding-right: 0%;
+        padding-left: 0%;
+        background-image: none;
+    }
+    .item__lista__estrategias:nth-child(2){
+        padding-right: 0%;
+        padding-left: 0%;
+        background-image: none;
+    }
+    .item__lista__estrategias:nth-child(3){
+        padding-right: 0%;
+        padding-left: 0%;
+        background-image: none;
+    }
+    
+    .titulo__lista__estrategias{
+        align-self: center;
+
+    }
+    .secao__lista__estrategias{
+        height: auto;
+    }
+    .secao__historia{
+        flex-direction: column-reverse;
+        width: 85.65vw;
+
+        padding-top: 2.5rem;
+        
+    }
+    .secao__info__historia{
+        gap: 2rem;
+    }
+    .imagem__banner__historia{
+        width: 100vw;
+        
+    }
+    .container__descricao__info__historia{
+        width: 85.65vw;
+        padding-left: 1.438rem;
+        margin-bottom: 5.438rem;
+    }
+    .info__historia{
+        font-size: var(--font-16);
+        line-height: var(--line-25)
+    }
+    .titulo__banner__historia{
+        display: none;
+    }
+    .lista__numeros__historia{
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 5.188rem;
+        padding-left: 1.438rem;
+    }
+    .titulo__item__lista__numeros__historia{
+        font-size: var(--font-50);
+        line-height: var(--line-63)
+    }
+    .descricao__item__lista__numeros__historia{
+        font-size: var(--font-18);
+        line-height: var(--line-28)
+    }
+    #titulo__historia__mobile{
+        display: flex;
+
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+
+        padding-left: 1.438rem;
+    }
+    .secao__tempo{
+        padding-top: 3.625rem;
+        padding-bottom: 5rem;
+    }
+    .carousel__indicadores__tempo{
+        display: none;
+    }
+    .secao__cabecalho__tempo{
+        width: 85.65vw;
+        margin-bottom: 3.813rem;
+        align-items: flex-start;
+    }
+    .titulo__cabecalho__tempo{
+        margin-bottom: 0rem;
+        font-size: var(--font-24);
+        line-height: var(--line-33)
+    }
+    .secao__container__carousel--tempo{
+        width: 85.65vw;
+    }
+    .container__carousel--tempo{
+        width: 85.65vw;
+        overflow-x: scroll;
+
+    }
+    .container__carousel--tempo::-webkit-scrollbar{
+        display: none;
+    }
+    .lista__tempo{
+        width: 367vw;
+        align-items: stretch;
+        gap: 2rem;
+    }
+    .item__lista__tempo{
+        width: 85.65vw;
+        align-items: center;
+        text-align: center;
+        gap: 1.625rem;
+    }
+    .span__tempo__mobile{
+        background-color: transparent;
+        border: none;
+        font-family: var(--inter);
+        font-size: var(--font-50);
+        font-weight: var(--medium);
+        line-height: var(--line-63);
+        color: white;
+        transition: all .3s ease-in-out;
+    }
+    .container__botoes__carousel__tempo{
+        display: none;
+    }
+    .descricao__conteudo__lista__tempo{
+        font-size: var(--font-16);
+        line-height: var(--line-25)
+    }
+    .container__info__tecnologia{
+        background-image: url("../../../Assets/Institucional/TecnologiaMobila.png");
+    }
+    .secao__depoimentos{
+        padding-top: 3rem;
+        padding-bottom: 5.688rem;
+        gap: 4rem;
+    }
+    .secao__container__carousel{
+        width: 100vw;
+        justify-content: center;
+    }
+    .secao__cabecalho__depoimentos{
+        width: 85vw;
+    }
+    .titulo__cabecalho__depoimentos{
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+
+        width: 61vw;
+    }
+    .carousel__indicadores{
+        display: none;
+    }
+    .botao__carrousel-depoimentos{
+        display: none;
+    }
+    .container__carousel{
+        width: 85vw;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        user-select: none;
+    }
+    .container__carousel::-webkit-scrollbar{
+        display: none;
+    }
+    .lista__depoimentos{
+        width: 340vw;
+    }
+    .item__lista__depoimentos{
+        width: 85vw;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        scroll-snap-align: start;
+        scroll-snap-type: y mandatory;
+    }
+    .secao__conteudo__lista__depoimentos{
+        text-align: center;
+        align-items: center;
+    }
+    .imagem__depoimento{
+        width: 4.625rem;
+        height: 4.625rem;
+    }
+    .nome__conteudo__lista__depoimentos{
+        font-size: var(--font-18);
+        line-height: var(--line-22);
+        font-weight: var(--regular);
+
+    }
+    .subtitulo__conteudo__lista__depoimentos{
+        font-size: var(--font-12);
+        line-height: var(--line-15);
+        font-weight: var(--semi-bold);
+    }
+    .descricao__conteudo__lista__depoimentos{
+        font-size: var(--font-16);
+        line-height: var(--line-25);
+    }
+    .secao__noticias{
+        padding-top: 3.5rem;
+    }
+    .titulo__cabecalho__noticias{
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+    }
+    .container__botoes__carousel__noticias{
+        display: none;
+    }
+    .container__carousel__noticias{
+        overflow-x: scroll;
+        scrollbar-width: 0%;
+    }
+    .container__carousel__noticias::-webkit-scrollbar{
+        display: none;
+    }
+    .item__lista__noticias{
+        width: 96.825vw;
+    }
+    .link__lista__noticias{
+        font-size: var(--font-18);
+        line-height: var(--line-28);
+    }
+}

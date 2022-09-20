@@ -262,3 +262,62 @@
         }
     }
 }
+@media (max-width: 1024px){
+    .container__modal__agenda{
+        gap: 0.764rem;
+
+        width: 100vw;
+
+        padding-left: 1.438rem;
+        padding-right: 1.438rem;
+        padding-top: 1.438rem;
+        padding-bottom: 1.438rem;
+    }
+    .secao__cabecalho__modal__agenda{
+        width: 86.65vw;
+    }
+    .titulo__conteudo__agenda{
+        width: 85.65vw;
+
+        font-size: var(--font-24);
+        font-weight: var(--medium);
+        line-height: var(--line-40);
+    }
+    .imagem__agenda__data{
+        width: 85.65vw;
+    }
+    .secao__conteudo__agenda{
+        height: 100vh;
+    }
+    .container__input__duplo{
+        width: 85.65vw;
+    }
+    .input__formulario__contato__agenda-duplo{
+        width: 40.44vw;
+    }
+    .formulario__conteudo__agenda{
+        gap: 1rem;
+        height: auto;
+    }
+    .container__input__formulario__contato{
+        gap: .5rem;
+    }
+    .input__formulario__contato__agenda{
+        width: 85.65vw;
+    }
+    .container__botao{
+        margin-top: 1rem;
+    }
+    .secao__dados__enviados{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .imagem__dados__enviados {
+        margin-bottom: 1.732rem;
+    }
+    .titulo__dados__enviados{
+        font-size: var(--font-24);
+        font-weight: var(--medium);
+        line-height: var(--line-40);
+    }
+}

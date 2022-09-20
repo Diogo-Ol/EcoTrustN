@@ -191,7 +191,7 @@
 
         justify-content: center;
     }
-    .secao__lista__redes__rodape{
+    .secao__lista__redes__rodape__menu{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
