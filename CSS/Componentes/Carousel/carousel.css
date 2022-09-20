@@ -95,7 +95,7 @@
         transition: all .4s ease-in-out;
     }
     .item__lista__depoimentos{
-        width: 66vw;
+        width: 66.1vw;
 
         display: flex;
         flex-direction: row;
