@@ -1,4 +1,7 @@
 @media (min-width:0px){
+    .secao__modal__menu{
+        display: none;
+    }
     #botao__mobile{
         display: none;
     }
@@ -96,7 +99,7 @@
     }
 
     .secao__modal__menu{
-        flex-direction: row;
+        flex-direction: none;
         justify-content: flex-end;
         align-items: stretch;
         width: 100vw;
