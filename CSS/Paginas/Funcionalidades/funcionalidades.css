@@ -413,4 +413,10 @@
         padding-top: 13.875rem;
         background-size: 100vw 54.5rem;
     }
+    .lista__conteudos__tabs__mobile{
+        display: none;
+    }
+    #botao__agenda__tabs__funcionalidades__mobile{
+        display: none;
+    }
 }

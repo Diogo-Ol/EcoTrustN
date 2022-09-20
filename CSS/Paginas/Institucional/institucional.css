@@ -457,4 +457,7 @@
         visibility: visible;
         opacity: 1;
     }
+    .span__tempo__mobile{
+        display: none;
+    }
 }

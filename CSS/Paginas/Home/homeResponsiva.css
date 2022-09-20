@@ -316,3 +316,8 @@
     }
     
 }
+@media (min-width:2110px){
+    .secao__banner{
+        justify-content: space-evenly;
+    }
+}
