@@ -1,0 +1,77 @@
+:root{
+    --inter: 'Inter', sans-serif;
+
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500;
+    --regular: 400;
+    --light: 300;
+
+    --primary-100: #FF6F29;
+    --primary-80: #FF8C54;
+    --primary-60: #FFB794;
+    --primary-40: #FFD4BF;
+    --primary-20: #FFE2D4;
+    --primary-10: #FFF1EA;
+    
+    --text-gray-100: #616161;
+    --text-gray-60: #999999;
+    --text-gray-40: #BFBFC0;
+
+    --neutral--100: #111113;
+    --neutral--80: #202125;
+    --neutral--60:  #2F3137;
+    --neutral--20:#E6E6E6;
+    --neutral--10: #EFEFEF;
+
+    --white: #FFFFFF;
+    --black:  #000000;
+
+    --stroke-1: #E6E6E6;
+    --stroke-2: #DEDEDE;
+    --stroke-red: #FDD3D3;
+    
+    --line-16: 16px;
+    --line-17: 17px;
+    --line-20: 20px;
+    --line-25: 25px;
+    --line-28:  28px;
+    --line-37:  37px;
+    --line-40:  40px;
+    --line-48:  48px;
+    --line-63:  63px;
+    --line-73: 73px;
+    
+    --font-12: 12px;
+    --font-14: 14px;
+    --font-16: 16px;
+    --font-18: 18px;
+    --font-24: 24px;
+    --font-30: 30px;
+    --font-40: 40px;
+    --font-50: 50px;
+    --font-60: 60px;
+}
+body a{
+    color: #FFFFFF;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+#body{
+    scroll-behavior: smooth;
+    font-family: var(--inter);
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+textarea{
+    resize: none;
+    user-select: none;
+}
+textarea::selection{
+    background-color: transparent;
+}

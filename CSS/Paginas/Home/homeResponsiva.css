@@ -1,0 +1,91 @@
+@media (min-width:1441px){
+    .descricao__intro__banner__estrategias{
+        width: 45.313rem;
+    }
+    .secao__conteudo__investir{
+        justify-content: space-between;
+    }
+    .container__dados__investir{
+        width: 22.451rem;
+    }
+}
+@media (max-width:1024px){
+    .secao__banner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.875rem;
+
+        padding-top: 3rem;
+        padding-left: 1.563rem;
+    }
+    .secao__conteudo__banner{
+        gap: 3rem;
+    }
+    .container__conteudo__banner{
+        gap: 1.625rem;
+    }
+    .titulo__secao__banner{
+        width: 85.65vw;
+        font-size: var(--font-30);
+        line-height: var(--line-40)
+    }
+    .descricao__secao__banner{
+        width: 85.65vw;
+        font-size: var(--font-16);
+        line-height: var(--line-25)
+    }
+    .imagem__banner{
+        width: 93vw;
+        height: auto;
+        align-self: flex-end;
+    }
+    .secao__banner__estrategias{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4.173rem;
+
+        padding-top: 3.5rem;
+        padding-left: 1.438rem;
+    }
+    .titulo__intro__banner__estrategias{
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+        width: 16.688rem;
+    }
+    .descricao__intro__banner__estrategias{
+        display: none;
+    }
+    .lista__estrategias{
+        flex-direction: column;
+        align-items: center;
+        width: 93.65vw;
+        text-align: center;
+        gap: 3.313rem;
+    }
+    .item__lista__estrategias{
+        text-align: center;
+
+        width: 17.563rem;
+    }
+    .item__lista__estrategias:nth-child(1){
+        padding-right: 0%;
+        padding-left: 0%;
+        background-image: none;
+    }
+    .item__lista__estrategias:nth-child(2){
+        padding-right: 0%;
+        padding-left: 0%;
+        background-image: none;
+    }
+    .item__lista__estrategias:nth-child(3){
+        padding-right: 0%;
+        padding-left: 0%;
+        background-image: none;
+    }
+    
+    .titulo__lista__estrategias{
+        align-self: center;
+
+    }
+}

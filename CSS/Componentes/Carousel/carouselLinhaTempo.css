@@ -1,0 +1,121 @@
+@media (min-width:0px){
+    .secao__tempo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: #202125;
+
+        padding-top: 8.188rem;
+        padding-bottom: 10.375rem;
+
+        width: 100vw;
+    }
+    .secao__cabecalho__tempo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 3rem;
+    }
+    .titulo__cabecalho__tempo{
+        font-family: var(--inter);
+        font-size: var(--font-40);
+        font-weight: var(--regular);
+        line-height: var(--line-48);
+        color: var(--white);
+
+        margin-bottom: 8.875rem;
+    }   
+    .carousel__indicadores__tempo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vw;
+
+        
+        background-image: url("../../../Assets/Institucional/Icones/linhaTempo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100vw;
+    }
+    .carousel__indicador__tempo{
+        background-color: transparent;
+        border: none;
+
+        font-family: var(--inter);
+        font-size: var(--font-50);
+        font-weight: var(--medium);
+        line-height: var(--line-63);
+        color: #2F3137;
+
+        transition: all .3s ease-in-out;
+
+    }
+    .carousel__indicador--ativo--tempo{
+        color: var(--white);
+
+        transition: all .3s ease-in-out;
+    }
+    .secao__container__carousel--tempo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 73.65vw;
+    }
+    .container__carousel--tempo{
+        width: 50.563rem;
+        
+        overflow: hidden;
+    }
+    .lista__tempo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: 300vw;
+
+        transition: all .3s ease-in-out;
+    }
+    .item__lista__tempo{
+        width: 50.563rem;
+    }
+    .descricao__conteudo__lista__tempo{
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--regular);
+        line-height: var(--line-28);
+        color: var(--white);
+
+        margin: 0%;
+    }
+    .container__botoes__carousel__tempo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.875rem;
+
+        width: 73.65vw; 
+
+        margin-top: 3.25rem;
+
+    }
+    .botao__carrousel-tempo{
+        background-color: transparent;
+        border: 1px solid var(--white);
+        border-radius: 50%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: 2.375rem;
+        height: 2.375rem;
+
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}

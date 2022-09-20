@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="keywords" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="800">
+        <meta property="og:image:height" content="600">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="">
+        <meta content="" property="og:url">
+        <meta content="" property="og:description">
+        <meta content="" name="twitter:title">
+        <meta content="" name="twitter:description">
+        <meta content="" name="twitter:image">
+        <link rel="stylesheet" href="./CSS/Base/index.css">
+        <link rel="stylesheet" href="./CSS/Paginas/Institucional/institucional.css">
+        <title>Institucional | EcoTrust</title>
+        <link rel="shortcut icon" href="./Assets/Base/Logo/LogoShortcut.svg" type="image/x-icon"/>
+
+    </head>
+    
+    <body id="body">
+
+        <section class="secao__modal__agenda">
+
+            <div class="container__modal__agenda">
+
+                <section class="secao__cabecalho__modal__agenda">
+
+                    <button class="botao__cabecalho__modal__agenda" id="botao__fecha__modal" onclick="fechaModalAgendamento()">
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.828 6.99992L9.192 1.63592L7.778 0.221924L0 7.99992L7.778 15.7779L9.192 14.3639L3.828 8.99992H16V6.99992H3.828Z" fill="black"/>
+                        </svg>
+                            
+                            
+
+                    </button>
+
+                    <button class="botao__cabecalho__modal__agenda" id="botao__volta__data" onclick="voltaAnimaData()">
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.828 6.99992L9.192 1.63592L7.778 0.221924L0 7.99992L7.778 15.7779L9.192 14.3639L3.828 8.99992H16V6.99992H3.828Z" fill="black"/>
+                        </svg>
+                            
+                            
+
+                    </button>
+
+                    <button class="botao__cabecalho__modal__agenda" id="botao__volta__horario" onclick="voltaAnimaHora()">
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.828 6.99992L9.192 1.63592L7.778 0.221924L0 7.99992L7.778 15.7779L9.192 14.3639L3.828 8.99992H16V6.99992H3.828Z" fill="black"/>
+                        </svg>
+                            
+                            
+
+                    </button>
+
+                    <button class="botao__cabecalho__modal__agenda" id="botao__fecha__modal__concluido" onclick="voltaAnimaDados()">
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.828 6.99992L9.192 1.63592L7.778 0.221924L0 7.99992L7.778 15.7779L9.192 14.3639L3.828 8.99992H16V6.99992H3.828Z" fill="black"/>
+                        </svg>
+                            
+                            
+
+                    </button>
+
+                    <ul class="lista__progresso__cabecalho__modal">
+
+                        <li class="item__lista__progresso__cabecalho__modal">
+
+                            <span class="barra__item__lista__progresso barra__item__lista__ativo" id="barra__progresso-1"></span>
+
+                        </li>
+
+                        <li class="item__lista__progresso__cabecalho__modal">
+
+                            <span class="barra__item__lista__progresso" id="barra__progresso-2"></span>
+
+                        </li>
+
+                        <li class="item__lista__progresso__cabecalho__modal">
+
+                            <span class="barra__item__lista__progresso" id="barra__progresso-3"></span>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <section class="secao__conteudo__agenda" id="conteudo__agenda__data">
+
+                    <h1 class="titulo__conteudo__agenda">Qual é o melhor dia para conversarmos?</h1>
+
+                    <img class="imagem__agenda__data" src="./Assets/Base/AgendaData.png" alt="Agenda Data">
+
+                    <div class="container__botao">
+                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="animaData()">
+
+                        Escolher horário
+
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4773 6.16664L6.00732 1.69664L7.18565 0.518311L13.6673 6.99998L7.18565 13.4816L6.00732 12.3033L10.4773 7.83331H0.333984V6.16664H10.4773Z" fill="white"/>
+                            </svg>
+                            
+                            
+
+                        </button>
+                    </div>
+                </section>
+
+                <section class="secao__conteudo__agenda" id="conteudo__agenda__hora">
+
+                    <h1 class="titulo__conteudo__agenda">Qual é o melhor horário do dia 18/08?</h1>
+
+                    <img class="imagem__agenda__data" src="./Assets/Base/AgendaHora.png" alt="Agenda Data">
+
+                    <div class="container__botao">
+                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="animaHora()">
+
+                        Próximo
+
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4773 6.16664L6.00732 1.69664L7.18565 0.518311L13.6673 6.99998L7.18565 13.4816L6.00732 12.3033L10.4773 7.83331H0.333984V6.16664H10.4773Z" fill="white"/>
+                            </svg>
+                            
+                            
+
+                        </button>
+                    </div>
+                </section>
+
+
+                <section class="secao__conteudo__agenda" id="conteudo__agenda__dados">
+
+                    <h1 class="titulo__conteudo__agenda">Dados necessários</h1>
+
+                    <form action="#" class="formulario__conteudo__agenda" >
+
+                        <div class="container__input__formulario__contato">
+
+                            <label for="Nome" class="label__input__formulario__contato">Nome completo</label>
+                            <input type="text" id="Nome" class="input__formulario__contato__agenda" placeholder="Seu nome e sobrenome">
+    
+                        </div>
+
+                        <div class="container__input__formulario__contato">
+    
+                            <label for="Email" class="label__input__formulario__contato">E-mail</label>
+                            <input type="email" id="Email" class="input__formulario__contato__agenda" placeholder="Seu melhor e-mail">
+    
+                        </div>
+
+                        <div class="container__input__formulario__contato">
+    
+                            <label for="Telefone" class="label__input__formulario__contato">DDD + número</label>
+                            <input type="tel" id="Telefone" class="input__formulario__contato__agenda" placeholder="DDD + número">
+    
+                        </div>
+
+                        <section class="container__input__duplo">
+
+                            <div class="container__input__formulario__contato">
+
+                                <label for="Nome Empresa" class="label__input__formulario__contato">Empresa</label>
+                                <input type="text" id="Nome Empresa" class="input__formulario__contato__agenda-duplo" placeholder="Nome da empresa">
+        
+                            </div>
+
+                            <div class="container__input__formulario__contato">
+    
+                                <label for="Funcionarios" class="label__input__formulario__contato">Quantidade de funcionários</label>
+                                <input type="number" id="Funcionarios" class="input__formulario__contato__agenda-duplo" placeholder="Somente números">
+        
+                            </div>
+
+
+                        </section>
+
+                    </form>
+
+                    <div class="container__botao">
+                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="animaDados()">
+
+                        Agendar demo
+
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4773 6.16664L6.00732 1.69664L7.18565 0.518311L13.6673 6.99998L7.18565 13.4816L6.00732 12.3033L10.4773 7.83331H0.333984V6.16664H10.4773Z" fill="white"/>
+                            </svg>
+                            
+                            
+
+                        </button>
+                    </div>
+                </section>
+
+                <section class="secao__conteudo__agenda" id="conteudo__agenda__concluido">
+
+
+                    <section class="secao__dados__enviados">
+
+                        <img src="./Assets/Base/AgendaConcluida.svg" alt="Agendamento Concluida" class="imagem__dados__enviados">
+
+                        <h1 class="titulo__dados__enviados">Agendamento realizado</h1>
+
+                        <span class="info__dados__enviados">18/08/2022 - 15H</span>
+
+                        <span class="info__rodape__dados__enviados">Confira seu e-mail para mais detalhes</span>
+
+                    </section>
+
+                    <div class="container__botao">
+                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="animaConcluido()">
+
+                        Fechar
+
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.00072 5.58599L11.9507 0.635986L13.3647 2.04999L8.41472 6.99999L13.3647 11.95L11.9507 13.364L7.00072 8.41399L2.05072 13.364L0.636719 11.95L5.58672 6.99999L0.636719 2.04999L2.05072 0.635986L7.00072 5.58599Z" fill="white"/>
+                        </svg>
+                            
+                            
+                            
+
+                        </button>
+                    </div>
+                </section>
+
+            </div>
+
+        </section>
+
+        
+
+        <main class="conteudo">
+
+            <section class="secao__banner">
+
+                <header class="cabecalho cabecalho__sobre">
+
+                    <div class="container__links__cabecalho">
+                        <a href="./index.html" class="link__home__cabecalho">
+        
+                            <svg width="115" height="16" viewBox="0 0 115 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2353_9231)">
+                                <path d="M18.0614 13.7301C18.7537 14.4394 19.619 14.9911 20.6575 15.401C21.6959 15.7951 22.8917 16 24.2448 16C25.0473 16 25.8497 15.9212 26.6679 15.7793C27.4861 15.6217 28.1784 15.401 28.7605 15.1172L28.2098 12.3271C27.7535 12.5163 27.2186 12.6739 26.6207 12.8C26.0228 12.9261 25.4406 12.9892 24.8427 12.9892C23.2693 12.9892 22.0264 12.5793 21.1138 11.7596C20.2012 10.9399 19.7449 9.67882 19.7449 8.00788C19.7449 6.33695 20.2012 5.07586 21.1138 4.25616C22.0264 3.43645 23.2693 3.0266 24.8427 3.0266C25.4249 3.0266 26.0228 3.08966 26.6207 3.23153C27.2186 3.35764 27.7378 3.51527 28.2098 3.70443L28.7605 0.914286C28.1784 0.630542 27.4703 0.394089 26.6679 0.252217C25.8655 0.0788177 25.063 0 24.2606 0C22.9075 0 21.6959 0.204926 20.6732 0.599015C19.6348 1.00887 18.7694 1.56059 18.0771 2.26995C17.3848 2.97931 16.8499 3.83054 16.5037 4.79212C16.1418 5.76946 15.9688 6.84138 15.9688 7.99212C15.9688 9.15862 16.1418 10.2148 16.5037 11.1921C16.8499 12.1695 17.3691 13.0207 18.0614 13.7301Z" fill="white"/>
+                                <path d="M32.4282 13.6355C33.1048 14.3606 33.923 14.9438 34.9142 15.3695C35.8897 15.7951 37.0068 16 38.2656 16C39.5243 16 40.6257 15.7951 41.6012 15.3695C42.5767 14.9438 43.3949 14.3764 44.0714 13.6355C44.748 12.9103 45.2515 12.0591 45.6133 11.0975C45.9752 10.136 46.1483 9.09557 46.1483 8.00788C46.1483 6.90443 45.9752 5.8798 45.6133 4.91823C45.2515 3.95665 44.748 3.10542 44.0714 2.3803C43.3949 1.65517 42.5767 1.07192 41.6012 0.646305C40.6257 0.204926 39.5243 0 38.2656 0C37.0068 0 35.8897 0.204926 34.9142 0.630542C33.9387 1.05616 33.1048 1.63941 32.4282 2.36453C31.7517 3.08966 31.2482 3.94089 30.902 4.90246C30.5559 5.86404 30.3828 6.90443 30.3828 7.99212C30.3828 9.09557 30.5559 10.1202 30.902 11.0818C31.2482 12.0591 31.7674 12.9103 32.4282 13.6355ZM34.4422 5.99015C34.6153 5.37537 34.867 4.85517 35.2132 4.41379C35.5593 3.97241 35.9841 3.62562 36.4876 3.3734C36.9911 3.12118 37.5733 2.99507 38.2656 2.99507C38.9264 2.99507 39.5243 3.12118 40.0278 3.3734C40.547 3.62562 40.9718 3.97241 41.318 4.41379C41.6641 4.85517 41.9316 5.37537 42.0889 5.99015C42.262 6.60493 42.3407 7.267 42.3407 7.99212C42.3407 8.71724 42.262 9.37931 42.0889 9.99409C41.9159 10.6089 41.6641 11.1291 41.318 11.5704C40.9718 12.0118 40.547 12.3586 40.0278 12.6108C39.5243 12.8631 38.9264 12.9892 38.2656 12.9892C37.589 12.9892 36.9911 12.8631 36.4876 12.6108C35.9841 12.3586 35.5593 12.0118 35.2132 11.5704C34.867 11.1291 34.5995 10.6089 34.4422 9.99409C34.2691 9.37931 34.1904 8.71724 34.1904 7.99212C34.1904 7.28276 34.2691 6.60493 34.4422 5.99015Z" fill="white"/>
+                                <path d="M6.34178 6.36865H3.52539V9.17456H6.34178V6.36865Z" fill="white"/>
+                                <path d="M14.082 13.5886V10.6093L7.04884 13.0211L2.81639 11.5709V2.82209H11.2656V6.35312H7.06458V9.1748H14.082V0.0161743H0V13.5886L7.04884 16.0004L14.082 13.5886Z" fill="white"/>
+                                <path d="M59.2546 0.28418H58.3105V3.29502H59.2546V0.28418Z" fill="white"/>
+                                <path d="M47.1562 0.28418V3.29502H51.2943V15.7325H55.1019V3.29502H58.3117V0.28418H47.1562Z" fill="white"/>
+                                <path d="M64.8876 10.3729H65.5799L69.8281 15.7325H74.5168L69.4347 9.64773C70.4732 9.25364 71.2756 8.65462 71.8578 7.88221C72.4399 7.1098 72.7231 6.21127 72.7231 5.17088C72.7231 4.33541 72.5501 3.61029 72.2039 2.99551C71.8735 2.3965 71.4015 1.89206 70.8036 1.48221C70.2057 1.07236 69.4819 0.77285 68.6795 0.583687C67.8613 0.378761 66.9645 0.28418 66.0047 0.28418H61.0957V15.7325H64.9033V10.3729H64.8876ZM64.8876 3.20044H65.9732C66.9488 3.20044 67.704 3.35807 68.2547 3.70487C68.7896 4.0359 69.0729 4.5561 69.0729 5.2497C69.0729 5.97482 68.7896 6.54231 68.2075 6.9364C67.6411 7.34625 66.8386 7.53541 65.8159 7.53541H64.8876V3.20044Z" fill="white"/>
+                                <path d="M82.2719 16.0004C84.3331 16.0004 85.9379 15.4802 87.0865 14.4398C88.2351 13.3995 88.8173 11.9807 88.8173 10.1522V0.28418H85.0096V10.2783C85.0096 11.161 84.7736 11.8231 84.3173 12.296C83.8453 12.7531 83.1688 12.9896 82.2719 12.9896C81.3751 12.9896 80.6985 12.7531 80.2265 12.296C79.7702 11.8231 79.5342 11.161 79.5342 10.2783V0.28418H75.7266V10.1679C75.7266 11.9965 76.3087 13.4152 77.4573 14.4556C78.6216 15.4802 80.2265 16.0004 82.2719 16.0004Z" fill="white"/>
+                                <path d="M95.8829 12.9892C95.0962 12.9892 94.3567 12.8946 93.6801 12.7054C93.0035 12.5163 92.3899 12.2798 91.855 12.0276L91.084 14.9281C91.8077 15.2906 92.5945 15.5586 93.4441 15.7478C94.2937 15.9369 95.1434 16.0315 95.993 16.0315C96.9213 16.0315 97.7395 15.9054 98.479 15.6532C99.2027 15.401 99.8321 15.0542 100.336 14.6128C100.839 14.1714 101.232 13.6512 101.5 13.0522C101.767 12.4532 101.909 11.8227 101.909 11.1448C101.909 10.4828 101.783 9.89951 101.547 9.41084C101.311 8.92217 100.981 8.48079 100.556 8.0867C100.131 7.70837 99.6433 7.36158 99.0769 7.06207C98.5104 6.76256 97.8968 6.49458 97.2517 6.2266C96.8112 6.03744 96.4336 5.8798 96.1346 5.73793C95.8357 5.59606 95.6154 5.45419 95.458 5.32808C95.3007 5.18621 95.1906 5.04433 95.1276 4.8867C95.0647 4.72906 95.0332 4.5399 95.0332 4.33498C95.0332 3.87783 95.2063 3.5468 95.5524 3.34187C95.8986 3.15271 96.3549 3.05813 96.937 3.05813C97.6136 3.05813 98.2744 3.13695 98.9195 3.29458C99.5646 3.45222 100.147 3.67291 100.697 3.92512L101.343 1.07192C100.792 0.75665 100.1 0.504433 99.2971 0.315271C98.4947 0.0945813 97.6608 0 96.764 0C95.0332 0 93.6801 0.394089 92.6889 1.18227C91.6976 1.97044 91.2099 3.12118 91.2099 4.61872C91.2099 5.76946 91.556 6.69951 92.2483 7.44039C92.9406 8.18128 94.042 8.82759 95.5682 9.39507C96.528 9.75764 97.1888 10.0887 97.5507 10.4039C97.9126 10.7192 98.1014 11.066 98.1014 11.4601C98.1014 11.9961 97.8968 12.3901 97.472 12.6266C97.0787 12.8631 96.5437 12.9892 95.8829 12.9892Z" fill="white"/>
+                                <path d="M107.039 15.7322H110.846V3.29477H115V0.283936H102.885V3.29477H107.039V15.7322Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2353_9231">
+                                <rect width="115" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                            
+                        </a>
+        
+                        <section class="secao__lista__links__cabecalho">
+        
+                        <ul class="lista__links__cabecalho">
+        
+                            <li class="item__lista__links__cabecalho">
+        
+                                <a href="./index.html" class="link__cabecalho link__cabecalho__sobre">Início</a>
+        
+                            </li>
+        
+                            <li class="item__lista__links__cabecalho">
+        
+                                <a href="./funcionalidades.html" class="link__cabecalho link__cabecalho__sobre">Funcionalidades</a>
+        
+                            </li>
+        
+                            <li class="item__lista__links__cabecalho">
+        
+                                <a href="./insitucional.html" class="link__cabecalho--ativo--sobre link__cabecalho link__padding__right link__cabecalho__sobre">Institucional</a>
+        
+                            </li>
+        
+                        </ul>
+        
+                        </section>
+                    </div>
+        
+                    <button class="botao__agenda__demo-white botao__agenda__cabecalho" id="botao__agenda__cabecalho__sobre" onclick="abrirModalAgendamento()">
+        
+                        Entrar em contato
+        
+                    </button>
+        
+                </header>
+
+                <section class="secao__conteudo__banner">
+                    <div class="container__conteudo__banner">
+                        <h1 class="titulo__secao__banner">Resolva problemas complexos de cibersegurança em poucos cliques</h1>
+
+                        <p class="descricao__secao__banner">A EcoTrust destaca a importância da prevenção em cibersegurança com participação de todas as áreas das empresas.</p>
+                    </div>
+
+                    <button class="botao__agenda__demo-white-seta" onclick="abrirModalAgendamento()"> 
+
+                        Agendar uma demo
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="black"/>
+                        </svg>        
+
+                    </button>
+                </section>
+
+            </section>
+
+            <section class="secao__banner__estrategias">
+
+                <section class="secao__intro__banner__estrategias">
+
+                    <h2 class="titulo__intro__banner__estrategias">Segurança como parte da estratégia</h2>
+
+                    <p class="descricao__intro__banner__estrategias">Nossa missão é ajudar as empresas na prevenção de ataques cibernéticos, a partir de decisões baseadas nos vetores de risco consolidados. Enxergamos a segurança como aspecto estratégico para a continuidade dos negócios e priorizamos essa perspectiva na plataforma EcoTrust.</p>
+
+                </section>
+
+                <section class="secao__lista__estrategias">
+
+                    <ul class="lista__estrategias">
+                        
+                        <li class="item__lista__estrategias">
+
+                            <img src="./Assets/Institucional/Icones/IconeEstrategias1.svg" alt="Imagem Estratégia" class="imagem__lista__estrategias">
+
+                            <h3 class="titulo__lista__estrategias">Inovação</h3>
+
+                            <p class="descricao__lista__estrategias">Reunimos o que há de mais robusto e tecnológico em cibersegurança para fomentar as melhores decisões</p>
+
+                        </li>
+
+                        <li class="item__lista__estrategias">
+
+                            <img src="./Assets/Institucional/Icones/IconeEstrategias2.svg" alt="Imagem Estratégia" class="imagem__lista__estrategias">
+
+                            <h3 class="titulo__lista__estrategias">Confiança</h3>
+
+                            <p class="descricao__lista__estrategias">Confiança entre pessoas, tecnologias, empresas, profissionais, clientes e fornecedores</p>
+
+                        </li>
+
+                        <li class="item__lista__estrategias">
+
+                            <img src="./Assets/Institucional/Icones/IconeEstrategias3.svg" alt="Imagem Estratégia" class="imagem__lista__estrategias">
+
+                            <h3 class="titulo__lista__estrategias">Simplicidade</h3>
+
+                            <p class="descricao__lista__estrategias">A segurança precisa ser simplificada para se tornar uma prioridade incorporada pela área de negócios</p>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </section>
+
+            <section class="secao__historia">
+
+                <section class="secao__banner__historia">
+
+                    <h3 class="titulo__banner__historia">Nossa história</h3>
+
+                    <img src="./Assets/Institucional/Imagens/imagem-nossa-historia.png" alt="Nossa História" class="imagem__banner__historia">
+
+                </section>
+
+                <section class="secao__info__historia">
+
+                    <section class="container__descricao__info__historia">
+                        <p class="info__historia">A <b>EcoTrust</b> é uma empresa de tecnologia com foco em segurança cibernética, em atuação há aproximadamente 15 anos e que tem o propósito de ajudar as empresas a resolverem problemas complexos em cibersegurança de forma simples.</p>
+
+                        <p class="info__historia">Em 2019, a EcoTrust lançou a <b>EcoTrust</b>, plataforma de Inteligência em Riscos Cibernéticos que trata a cibersegurança de forma preventiva. Com o produto, é possível analisar as vulnerabilidades objetivamente e mitigar ataques cibernéticos e vazamentos de dados.</p>
+                    </section>
+
+                    <ul class="lista__numeros__historia">
+
+                        <li class="item__lista__numeros__historia">
+
+                            <h10 class="titulo__item__lista__numeros__historia">+ 14 anos</h10>
+
+                            <p class="descricao__item__lista__numeros__historia">de experiência em Segurança e Cloud</p>
+
+                        </li>
+
+                        <li class="item__lista__numeros__historia">
+
+                            <h10 class="titulo__item__lista__numeros__historia">+ 200</h10>
+
+                            <p class="descricao__item__lista__numeros__historia">clientes em 20 estados brasileiros</p>
+
+                        </li>
+
+                    </ul>
+                </section>
+
+            </section>
+
+            <section class="secao__tempo">
+
+                <section class="secao__cabecalho__tempo">
+
+                    <h12 class="titulo__cabecalho__tempo">Linha do Tempo</h12>
+
+                    <div class="carousel__indicadores__tempo" data-navegacao-tempo>
+                        <button class="carousel__indicador__tempo carousel__indicador--ativo--tempo" aria-label="Slide 1">2017</button>
+
+                        <button class="carousel__indicador__tempo" aria-label="Slide 2">2019</button>
+
+                        <button class="carousel__indicador__tempo" aria-label="Slide 3">2020</button>
+
+                        <button class="carousel__indicador__tempo" aria-label="Slide 4">2022</button>
+
+                    </div>
+
+                </section>
+
+                <section class="secao__container__carousel--tempo">
+                    
+                    <section class="container__carousel--tempo">
+
+                        <ul class="lista__tempo" data-lista-tempo>
+
+                            <li class="item__lista__tempo">
+
+                            <p class="descricao__conteudo__lista__tempo">Os fundadores da EcoTrust, Vinicius Durbano e Luciana Durbano, começaram a desenvolver a plataforma EcoTrust depois de terem atendido mais de 3 mil empresas atacadas por Ransomware, através de um serviço de Resposta a Incidentes que ofereciam desde 2015.</p>
+
+
+                            </li>
+
+                            <li class="item__lista__tempo">
+
+                            <p class="descricao__conteudo__lista__tempo">Foi lançada a EcoTrust, plataforma de Inteligência em Riscos Cibernéticos que, desde então, passou a ser o único produto comercializado pela EcoTrust.  </p>
+
+
+                            </li>
+
+                            <li class="item__lista__tempo">
+
+                            <p class="descricao__conteudo__lista__tempo">Em maio de 2020, a EcoTrust recebeu seu primeiro investimento (pré-seed) da Darwin Startups, entrando para a jornada de Venture Capital. A Darwin possui investimentos em empresas como B3, Sinqia, RTM, Banco Safra e TransUnion.</p>
+
+
+                            </li>
+
+                            <li class="item__lista__tempo">
+
+                            <p class="descricao__conteudo__lista__tempo">Em junho de 2022, a DOMO Invest anunciou o aporte de R$ 1,5 milhão na EcoTrust. A empresa é uma das principais gestoras de Venture Capital no Brasil.</p>
+
+
+                            </li>
+
+                        </ul>
+
+                    </section>
+
+                </section>
+
+                <section class="container__botoes__carousel__tempo">
+
+                    <button class="botao__carrousel-tempo botao__anterior___caroussel-tempo" data-anterior-tempo>
+
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.52268 6.16664L7.99268 1.69664L6.81435 0.518311L0.332683 6.99998L6.81435 13.4816L7.99268 12.3033L3.52268 7.83331H13.666V6.16664H3.52268Z" fill="white"/>
+                        </svg>
+                            
+    
+                    </button>
+    
+                    <button class="botao__carrousel-tempo botao__proximo___caroussel-tempo" data-proximo-tempo>
+    
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4773 6.16664L6.00732 1.69664L7.18565 0.518311L13.6673 6.99998L7.18565 13.4816L6.00732 12.3033L10.4773 7.83331H0.333984V6.16664H10.4773Z" fill="white"/>
+                            </svg>
+                                
+    
+                    </button>
+
+                </section>
+
+            </section>
+
+            <section class="secao__tecnologia">
+
+                <div class="container__info__tecnologia">
+                </div>
+            </section>
+
+            <section class="secao__depoimentos">
+
+                <section class="secao__cabecalho__depoimentos">
+
+                    <h12 class="titulo__cabecalho__depoimentos">Acreditam no nosso propósito</h12>
+
+                    <div class="carousel__indicadores" data-navegacao-depoimentos>
+                        <button class="carousel__indicador carousel__indicador--ativo" aria-label="Slide 1">01</button>
+
+                        <button class="carousel__indicador" aria-label="Slide 2">02</button>
+
+                        <button class="carousel__indicador" aria-label="Slide 3">03</button>
+
+                        <button class="carousel__indicador" aria-label="Slide 4">04</button>
+
+                    </div>
+
+                </section>
+
+                <section class="secao__container__carousel">
+                    <button class="botao__carrousel-depoimentos botao__anterior___caroussel-depoimentos" data-anterior-depoimentos>
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.828 6.99992L9.192 1.63592L7.778 0.221924L0 7.99992L7.778 15.7779L9.192 14.3639L3.828 8.99992H16V6.99992H3.828Z" fill="black"/>
+                            </svg>
+                            
+                        
+
+                    </button>
+
+                    <section class="container__carousel">
+                    <ul class="lista__depoimentos" data-lista-depoimentos>
+
+                        <li class="item__lista__depoimentos">
+
+                            <img src="./Assets/Depoimentos/Depoimento1.png" class="imagem__depoimento">
+
+                            <section class="secao__conteudo__lista__depoimentos">
+
+                                <h12 class="nome__conteudo__lista__depoimentos">Marcello Gonçalves</h12>
+
+                                <p class="subtitulo__conteudo__lista__depoimentos">Sócio fundador e gestor da Domo Invest</p>
+
+                                <p class="descricao__conteudo__lista__depoimentos">"Nesse momento em que a Lei de Proteção de Dados é tão debatida no mundo dos negócios, soluções que ajudam a entender esse conceito, além de produtos que auxiliam na construção de ambientes seguros e com privacidade, se tornam relevantes. A EcoTrust carrega um propósito importante no mercado, o que nos manteve determinados em investir na empresa".</p>
+
+                            </section>
+
+                        </li>
+
+                        <li class="item__lista__depoimentos">
+
+                            <img src="./Assets/Depoimentos/Depoimento2.png" class="imagem__depoimento">
+
+                            <section class="secao__conteudo__lista__depoimentos">
+
+                                <h12 class="nome__conteudo__lista__depoimentos">Davis Alves</h12>
+
+                                <p class="subtitulo__conteudo__lista__depoimentos">Presidente da ANPPD</p>
+
+                                <p class="descricao__conteudo__lista__depoimentos">“Fico muito feliz em ver o belo trabalho de desenvolvimento tecnológico que a EcoTrust faz e por terem criado uma tecnologia brasileira de segurança para ajudar na privacidade de dados.”</p>
+
+                            </section>
+
+                        </li>
+
+                        <li class="item__lista__depoimentos">
+
+                            <img src="./Assets/Depoimentos/Depoimento3.png" class="imagem__depoimento">
+
+                            <section class="secao__conteudo__lista__depoimentos">
+
+                                <h12 class="nome__conteudo__lista__depoimentos">Rodrigo Gazola</h12>
+
+                                <p class="subtitulo__conteudo__lista__depoimentos">Diretor Executivo da ADDEE Solar Winds MSP</p>
+
+                                <p class="descricao__conteudo__lista__depoimentos">“Feliz em acompanhar o desenvolvimento da EcoTrust. Conhecimento, capacidade técnica, responsabilidade, especialização e relacionamento, para mim essa é a EcoTrust.”</p>
+
+                            </section>
+
+                        </li>
+
+                        <li class="item__lista__depoimentos">
+
+                            <img src="./Assets/Depoimentos/Depoimento4.png" class="imagem__depoimento">
+
+                            <section class="secao__conteudo__lista__depoimentos">
+
+                                <h12 class="nome__conteudo__lista__depoimentos">Célio Fabiano</h12>
+
+                                <p class="subtitulo__conteudo__lista__depoimentos">Co-founder e CEO da Desk Manager</p>
+
+                                <p class="descricao__conteudo__lista__depoimentos">“Um produto SaaS de alto nível, com alto valor agregado e com preço nível Brasil, em reais, condicionado a um excelente atendimento, faz com que tenhamos uma segurança na parceria de longo prazo com a Eco.”</p>
+
+                            </section>
+
+                        </li>
+
+                    </ul>
+                    </section>
+
+                    <button class="botao__carrousel-depoimentos botao__proximo___caroussel-depoimentos" data-proximo-depoimentos>
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="black"/>
+                            </svg>
+                            
+
+                    </button>
+                </section>
+            </section>
+
+            <section class="secao__noticias">
+
+                <section class="secao__cabecalho__noticias">
+                    <h16 class="titulo__cabecalho__noticias">EcoTrust na mídia</h16>
+                </section>
+                <section class="secao__container__carousel__noticias">
+                    
+                    <section class="container__carousel__noticias">
+
+                        <ul class="lista__noticias" data-lista-noticias>
+
+                            <li class="item__lista__noticias">
+
+                                <img src="./Assets/Institucional/Imagens/r7.svg" alt="R7" class="imagem__lista__noticias">
+
+                                <a target="_blank" href="https://noticias.r7.com/record-news/videos/entenda-o-que-e-a-deep-web-e-saiba-os-riscos-da-navegacao-15032019" class="link__lista__noticias">Entenda o que é a Deep Web e saiba os riscos da navegação</a>
+
+                            </li>
+
+                            <li class="item__lista__noticias">
+
+                                <img src="./Assets/Institucional/Imagens/estadao.svg" alt="Estadao" class="imagem__lista__noticias">
+
+                                <a target="_blank" href="https://www.figma.com/exit?url=https%3A%2F%2Fpolitica.estadao.com.br%2Fblogs%2Ffausto-macedo%2Fos-perigos-do-submundo-da-internet%2F" class="link__lista__noticias">Os perigos do submundo da internet</a>
+
+                            </li>
+
+                            <li class="item__lista__noticias">
+
+                                <img src="./Assets/Institucional/Imagens/inforchannel.svg" alt="Infor Channel" class="imagem__lista__noticias">
+
+                                <a target="_blank" href="https://inforchannel.com.br/2020/10/27/ecotrust-se-consolida-como-opcao-brasileira-para-seguranca-cibernetica/" class="link__lista__noticias">EcoTrust se consolida como opção brasileira para segurança cibernética</a>
+
+                            </li>
+
+                        </ul>
+
+                    </section>
+
+                </section>
+
+                <section class="container__botoes__carousel__noticias">
+
+                    <button class="botao__carrousel-noticias botao__anterior___caroussel-noticias" data-anterior-noticias>
+
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.52268 6.16664L7.99268 1.69664L6.81435 0.518311L0.332683 6.99998L6.81435 13.4816L7.99268 12.3033L3.52268 7.83331H13.666V6.16664H3.52268Z" fill="white"/>
+                        </svg>
+                            
+    
+                    </button>
+    
+                    <button class="botao__carrousel-noticias botao__proximo___caroussel-noticias" data-proximo-noticias>
+    
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4773 6.16664L6.00732 1.69664L7.18565 0.518311L13.6673 6.99998L7.18565 13.4816L6.00732 12.3033L10.4773 7.83331H0.333984V6.16664H10.4773Z" fill="white"/>
+                            </svg>
+                                
+    
+                    </button>
+
+                </section>
+
+            </section>
+
+            <section class="secao__contato">
+
+                <section class="secao__dados__contato">
+
+                    <div class="container__intro__dados__contato">
+
+                        <h13 class="titulo__intro__dados__contato">Entre em contato, nós podemos ajudar</h13>
+
+                        <a href="#" class="link__contato__whatsapp">
+
+                            Conversar pelo WhatsApp
+
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.04353 15.4116L6.64686 15.7641C7.66431 16.3575 8.82152 16.669 9.99936 16.6666C11.3179 16.6666 12.6068 16.2756 13.7032 15.5431C14.7995 14.8105 15.654 13.7694 16.1586 12.5512C16.6631 11.333 16.7952 9.99256 16.5379 8.69936C16.2807 7.40615 15.6458 6.21826 14.7134 5.28591C13.7811 4.35356 12.5932 3.71863 11.3 3.46139C10.0068 3.20416 8.66631 3.33618 7.44814 3.84076C6.22996 4.34535 5.18877 5.19983 4.45623 6.29616C3.72369 7.39249 3.33269 8.68142 3.33269 9.99996C3.33269 11.1966 3.64686 12.3441 4.23603 13.3533L4.58769 13.9566L4.04353 15.9575L6.04353 15.4116ZM1.66936 18.3333L2.79603 14.1933C2.05364 12.9207 1.66361 11.4733 1.66603 9.99996C1.66603 5.39746 5.39686 1.66663 9.99936 1.66663C14.6019 1.66663 18.3327 5.39746 18.3327 9.99996C18.3327 14.6025 14.6019 18.3333 9.99936 18.3333C8.52667 18.3357 7.07991 17.9459 5.80769 17.2041L1.66936 18.3333ZM6.99186 6.08996C7.10353 6.08163 7.21603 6.08163 7.32769 6.08663C7.37269 6.08996 7.41769 6.09496 7.46269 6.09996C7.59519 6.11496 7.74103 6.19579 7.79019 6.30746C8.03853 6.87079 8.28019 7.43829 8.51353 8.00746C8.56519 8.13413 8.53436 8.29663 8.43603 8.45496C8.3684 8.56202 8.29524 8.6655 8.21686 8.76496C8.12269 8.88579 7.92019 9.10746 7.92019 9.10746C7.92019 9.10746 7.83769 9.20579 7.86936 9.32829C7.88103 9.37496 7.91936 9.44246 7.95436 9.49913L8.00353 9.57829C8.21686 9.93413 8.50353 10.295 8.85353 10.635C8.95353 10.7316 9.05103 10.8308 9.15603 10.9233C9.54603 11.2675 9.98769 11.5483 10.4644 11.7566L10.4685 11.7583C10.5394 11.7891 10.5752 11.8058 10.6785 11.85C10.7302 11.8716 10.7835 11.8908 10.8377 11.905C10.8937 11.9192 10.9526 11.9165 11.0071 11.8972C11.0615 11.878 11.109 11.8429 11.1435 11.7966C11.7469 11.0658 11.8019 11.0183 11.8069 11.0183V11.02C11.8488 10.9809 11.8986 10.9512 11.9529 10.9329C12.0072 10.9147 12.0648 10.9083 12.1219 10.9141C12.1719 10.9175 12.2227 10.9266 12.2694 10.9475C12.7119 11.15 13.436 11.4658 13.436 11.4658L13.921 11.6833C14.0027 11.7225 14.0769 11.815 14.0794 11.9041C14.0827 11.96 14.0877 12.05 14.0685 12.215C14.0419 12.4308 13.9769 12.69 13.9119 12.8258C13.8673 12.9185 13.8083 13.0035 13.7369 13.0775C13.6528 13.1657 13.5607 13.2461 13.4619 13.3175C13.4277 13.3432 13.3929 13.3682 13.3577 13.3925C13.254 13.4582 13.1476 13.5194 13.0385 13.5758C12.824 13.6898 12.587 13.7552 12.3444 13.7675C12.1902 13.7758 12.036 13.7875 11.881 13.7791C11.8744 13.7791 11.4077 13.7066 11.4077 13.7066C10.2229 13.395 9.12718 12.8112 8.20769 12.0016C8.01936 11.8358 7.84519 11.6575 7.66686 11.48C6.92519 10.7425 6.36519 9.94663 6.02519 9.19496C5.85117 8.82603 5.75716 8.42446 5.74936 8.01663C5.74592 7.51067 5.91132 7.01801 6.21936 6.61663C6.28019 6.53829 6.33769 6.45663 6.43686 6.36246C6.54269 6.26246 6.60936 6.20913 6.68186 6.17246C6.77825 6.12415 6.88341 6.09581 6.99103 6.08913L6.99186 6.08996Z" fill="white"/>
+                            </svg>
+                                
+                        </a>
+
+                    </div>
+
+                    <div class="container__info__dados__contato">
+
+                        <span class="numero__info__dados__contato">(11) 4305-1868</span>
+
+                        <span class="local__info__dados__contato">
+                            Av. Paulista, 171 – 4º andar <br>
+                            Paraíso – São Paulo – SP – Brasil.
+                        </span>
+
+                    </div>
+
+                </section>
+
+                <form action="POST" class="formulario__contato">
+
+                    <div class="container__input__formulario__contato">
+
+                        <label for="Nome" class="label__input__formulario__contato">Nome completo</label>
+                        <input type="text" id="Nome" class="input__formulario__contato" placeholder="Seu nome e sobrenome">
+
+                    </div>
+
+                    <div class="container__input__formulario__contato">
+
+                        <label for="Area" class="label__input__formulario__contato">Área de atuação</label>
+                        <input type="text" id="Area" class="input__formulario__contato" placeholder="Segurança, Negócios, Etc.">
+
+                    </div>
+
+                    <div class="container__input__formulario__contato">
+
+                        <label for="Empresa" class="label__input__formulario__contato">Empresa</label>
+                        <input type="text" id="Empresa" class="input__formulario__contato" placeholder="Nome da empresa">
+
+                    </div>
+
+                    <div class="container__input__formulario__contato">
+
+                        <label for="Email" class="label__input__formulario__contato">E-mail</label>
+                        <input type="email" id="Email" class="input__formulario__contato" placeholder="Seu melhor e-mail">
+
+                    </div>
+
+                    <div class="container__input__formulario__contato">
+
+                        <label for="Telefone" class="label__input__formulario__contato">DDD + número</label>
+                        <input type="tel" id="Telefone" class="input__formulario__contato" placeholder="DDD + número">
+
+                    </div>
+
+                    <div class="container__input__formulario__contato">
+
+                        <label for="Mensagem" class="label__input__formulario__contato">Mensagem</label>
+                        <textarea class="input__formulario__contato input__mensagem__formulario" name="Mensagem" id="Mensagem" cols="30" rows="10" placeholder="Como podemos lhe ajudar?"></textarea>
+
+                    </div>
+
+                    <button type="submit" class="botao__enviar__formulario">
+
+                        Enviar Mensagem
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="white"/>
+                            </svg>
+                            
+                            
+
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section class="secao__banner__footer">
+
+                <h13 class="titulo__banner__footer">Sem brechas quando o assunto é segurança</h13>
+
+                <button class="botao__agenda__demo-white-seta" onclick="abrirModalAgendamento()">
+
+                    Agendar uma demo
+
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="black"/>
+                    </svg>
+                        
+
+                </button>
+
+            </section>
+
+        </main>
+
+        <footer class="rodape">
+            <address class="address__rodape">
+                <section class="section__redes__rodape">
+
+                    <img src="./Assets/Base/Logo/LogoBranca.svg" alt="Logo EcoTrust" class="logo__section__redes">
+
+                    <section class="secao__lista__redes__rodape">
+
+                        <a href="https://www.instagram.com/ecoit/" class="link__lista__redes__rodape">
+                            <img src="./Assets/Icones/Instagram.svg" alt="Instagram" class="item__lista__redes__rodape">
+                        </a>
+
+                        <a href="#" class="link__lista__redes__rodape">
+                            <img src="./Assets/Icones/Facebook.svg" alt="Facebook" class="item__lista__redes__rodape">
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/eco-it-tecnologia/" class="link__lista__redes__rodape">
+                            <img src="./Assets/Icones/Linkedin.svg" alt="Linkedin" class="item__lista__redes__rodape">
+                        </a>
+
+                        <a href="#" class="link__lista__redes__rodape">
+                            <img src="./Assets/Icones/Youtube.svg" alt="Youtube" class="item__lista__redes__rodape">
+                        </a>
+
+                    </section>
+
+                </section>
+
+                <section class="secao__links__rodape">
+
+                    <ul class="lista__links__rodape">
+
+                        <a href="#" class="item__lista__links__rodape">Contato</a>
+
+                        <a href="./funcionalidades.html" class="item__lista__links__rodape">Solução</a>
+
+                        <a href="./insitucional.html" class="item__lista__links__rodape">Sobre a EcoTrust</a>
+
+                    </ul>
+
+                    <button class="botao__up__pagina" id="botao__scroll__top" onclick="topFunction()" >
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.00066 3.828L1.63666 9.192L0.222656 7.778L8.00066 -3.39987e-07L15.7787 7.778L14.3647 9.192L9.00066 3.828L9.00066 16L7.00066 16L7.00066 3.828Z" fill="white"/>
+                        </svg>
+                            
+
+                    </button>
+
+                </section>
+
+            </address>
+
+            <section class="secao__copyrigth">
+
+                <span class="texto__copyright">
+
+                    &#169;2022 - Todos os Direitos Reservados
+
+                </span>
+
+                <div class="container__links__copyrigth">
+
+                    <a href="https://ecoit.com.br/politica-de-privacidade/" class="link__copyright">Polìtica de Privacidade</a>
+
+                </div>
+
+            </section>
+
+        </footer>
+    <script src="./Componentes/buttonTop.js" type="text/javascript"></script>
+    <script src="./Componentes/Modal/animaModal.js" type="text/javascript"></script>
+    <script src="./Componentes/Carousel/index.js" type="module"></script>
+    <script src="./Componentes/Home/tab.js" type="text/javascript"></script>
+    </body>
+
+</html>

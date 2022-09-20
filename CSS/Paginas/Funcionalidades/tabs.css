@@ -1,0 +1,16 @@
+@media (min-width:0px){
+    /*-------------------TABS------------------*/
+    .active__funcionalidades{
+        color: var(--black);
+        border-bottom: 2px solid var(--primary-100);
+
+        transition: all .1s ease-in-out;
+    }
+    .active__conteudo__funcionalidades{
+        font-weight: var(--semi-bold);
+        color: #000000;
+        border-left: 2px solid var(--primary-100);
+
+        transition: all .1s ease-in-out;
+    }
+}

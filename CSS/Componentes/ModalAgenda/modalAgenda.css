@@ -1,0 +1,264 @@
+@media (min-width:0px){
+    .secao__modal__agenda{
+        display: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: stretch;
+
+        width: 100vw;
+        height: 100vh;
+
+        position: fixed;
+
+        background: rgba(0, 0, 0, 0.6);
+
+        z-index: 200;
+
+        overflow: hidden;
+    }
+    .container__modal__agenda{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.764rem;
+
+        width: 64.89vw;
+
+        background-color: white;
+
+        padding-top: 2.813rem;
+        padding-left: 2.813rem;
+        padding-right: 2.813rem;
+        padding-bottom: 3rem;
+
+        background-image: url("../../../Assets/Icones/GrafismoModal.svg");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        overflow-y: scroll;
+
+        position: relative;
+
+    }
+    .secao__cabecalho__modal__agenda{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 58.64vw;
+    }
+    .botao__cabecalho__modal__agenda{
+        border: none;
+        background-color: transparent;
+    }
+    .lista__progresso__cabecalho__modal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.625rem;
+    }
+    .item__lista__progresso__cabecalho__modal{
+        width: 2.875rem;
+        height: 3px;
+    }
+    .barra__item__lista__progresso{
+        display: flex;
+
+        width: 2.875rem;
+        height: 3px;
+
+        background-color: #BFBFC0;
+
+        transition: all .2s ease-in-out;
+    }
+    .barra__item__lista__ativo{
+        background-color: var(--primary-100);
+    }
+    .secao__conteudo__agenda{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        height: 84vh;
+        justify-content: space-between;
+
+        position:relative;
+
+        animation: animaConteudo .4s ease-in-out forwards;
+
+        cursor: pointer;
+    }
+    @keyframes animaConteudo {
+        0%{
+            opacity: 0;
+            
+        }
+        100%{
+            opacity: 1;
+   
+        }
+    }
+    .titulo__conteudo__agenda{
+        width: 21.75rem;
+
+        font-family: var(--inter);
+        font-size: var(--font-30);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-40);
+        color: var(--black);
+    }
+    .imagem__agenda__data{
+        width: 31.313rem;
+    }
+    .container__botao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .container__input__duplo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 41.3vw;
+    }
+    .formulario__conteudo__agenda{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        height: 49vh;
+    }
+    .input__formulario__contato__agenda{
+        font-family: var(--inter);
+        font-size: var(--font-16);
+        font-weight: var(--regular);
+        line-height: var(--line-25);
+        color: var(--black);
+
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+
+        width: 41.3vw;
+        outline: none;
+
+        transition: all .15s ease-in-out;
+    }
+    .input__formulario__contato__agenda:focus{
+        border-bottom: 1px solid black;
+
+        transition: all .15s ease-in-out;
+    }
+    .input__formulario__contato__agenda-duplo{
+        font-family: var(--inter);
+        font-size: var(--font-16);
+        font-weight: var(--regular);
+        line-height: var(--line-25);
+        color: var(--black);
+
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+
+        width: 19.44vw;
+        outline: none;
+
+        transition: all .15s ease-in-out;
+    }
+    .input__formulario__contato__agenda-duplo:focus{
+        border-bottom: 1px solid black;
+
+        transition: all .15s ease-in-out;
+    }
+    .secao__dados__enviados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .imagem__dados__enviados{
+        margin-bottom: 3.732rem;
+    }
+    .titulo__dados__enviados{
+        font-family: var(--inter);
+        font-size: var(--font-30);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-40);
+        color: var(--black);
+
+        margin-bottom: 0.688rem;
+    }
+    .info__dados__enviados{
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-28);
+        color: var(--black);
+
+        margin-bottom: 0.688rem;
+    }
+    .info__rodape__dados__enviados{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--medium);
+        line-height: var(--line-17);
+        color: var(--text-gray-100);
+    }
+    #conteudo__agenda__data{
+        display: flex;
+    }
+    #conteudo__agenda__hora{
+        display: none;
+    }
+    #conteudo__agenda__dados{
+        display: none;
+    }
+    #conteudo__agenda__concluido{
+        display: none;
+        justify-content: space-around;
+    }
+    #botao__fecha__modal{
+
+    }
+    #botao__volta__data{
+        display: none;
+    }
+    #botao__volta__horario{
+        display: none;
+    }
+    #botao__fecha__modal__concluido{
+        display: none;
+    }
+    @keyframes animaModal {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes animaContainer {
+        0%{
+            right: -50%;
+        }
+        100%{
+            right: 0%;
+        }
+    }
+    @keyframes animaFechaContainer {
+        0%{
+            right: 0%;
+        }
+        100%{
+            right: -50%;
+        }
+    }
+}

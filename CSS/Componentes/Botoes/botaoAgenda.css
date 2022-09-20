@@ -1,0 +1,89 @@
+@media (min-width:0px){
+
+    .botao__agenda__demo-white{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-17);
+        color: var(--black);
+
+        background-color: transparent;
+
+        padding-top: 0.688rem;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        padding-bottom: 0.688rem;
+
+        border: 1px solid #B3B3B3;
+
+        transition: all .2s ease-in-out;
+    }
+    .botao__agenda__demo-white-seta{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-17);
+        color: var(--black);
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+
+        padding-top: 1.313rem;
+        padding-left: 1.5rem;
+        padding-right: 1.75rem;
+        padding-bottom: 1.313rem;
+
+        background-color: white;
+        border: none;
+    }
+    .botao__agenda__demo-white:hover{
+        color: var(--white);
+
+        background-color: var(--black);
+
+        padding-top: 0.688rem;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        padding-bottom: 0.688rem;
+
+        border: 1px solid var(--black);
+
+        transition: all .2s ease-in-out;
+    }
+    .botao__agenda__demo-black{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-17);
+        color: var(--white);
+
+        background-color: var(--black);
+
+        padding-top: 0.688rem;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        padding-bottom: 0.688rem;
+
+        border: 1px solid var(--black);
+
+        transition: all .2s ease-in-out;
+    }
+    .botao__agenda__demo-black-seta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+
+        padding-top: 1.313rem;
+        padding-left: 1.5rem;
+        padding-right: 1.75rem;
+        padding-bottom: 1.313rem;
+    }
+    .botao__agenda__demo-black-seta:hover{
+        background-color: #2F3137;
+
+        transition: all .2s ease-in-out;
+    }
+}

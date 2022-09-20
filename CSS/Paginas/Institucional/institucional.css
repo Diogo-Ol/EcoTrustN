@@ -1,0 +1,460 @@
+@import url("../../Componentes/Cabecalho/cabecalho.css");
+@import url("../../Componentes/ModalAgenda/modalAgenda.css");
+@import url("../../Componentes/Footer/footer.css");
+@import url("../../Componentes/Botoes/botaoAgenda.css");
+@import url("../../Componentes/Formulario/formulario.css");
+@import url("../../Componentes/Carousel/carouselLinhaTempo.css");
+@import url("../../Componentes/Carousel/carouselNoticias.css");
+
+@media (min-width:0px){
+    .cabecalho__sobre{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+    }
+    .link__cabecalho__sobre{
+        color: var(--white);
+    }
+    .link__cabecalho__sobre:hover{
+        color: var(--white);
+    }
+    .link__cabecalho--ativo--sobre{
+        border-bottom: 2px solid var(--white);
+    }
+    .secao__banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: space-between;
+
+        width: 100vw;
+        height: 47.813rem;
+        
+        background-image: url("../../../Assets/Institucional/Imagens/imagem-banner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding-bottom: 4.875rem;
+    }
+    .secao__conteudo__banner{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 93.65vw;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .container__conteudo__banner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.875rem;
+
+        width: 52.438rem;
+    }
+    .titulo__secao__banner{
+        font-family: var(--inter);
+        font-size: var(--font-50);
+        font-weight: var(--medium);
+        line-height: var(--line-63);
+        color: var(--white);
+    }
+    .descricao__secao__banner{
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--regular);
+        line-height: var(--line-28);
+        color: var(--white);
+
+        margin: 0%;
+
+        width: 35.563rem;
+    }
+    #botao__agenda__cabecalho__sobre{
+        color: var(--white);
+    }
+    /*-------------BANNER-ESTRATEGIAS-----------*/
+    .secao__banner__estrategias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 11.063rem;
+
+        padding-left: 2.813rem;
+        padding-right: 5.938rem;
+        padding-top: 6rem;
+        padding-bottom: 8.5rem;
+
+        width: 100vw;
+
+        background-color: #E6E6E6;
+    }
+    .secao__intro__banner__estrategias{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 5.688rem;
+    }
+    .titulo__intro__banner__estrategias{
+        font-family: var(--inter);
+        font-size: var(--font-40);
+        font-weight: var(--regular);
+        line-height: var(--line-48);
+        color: var(--black);
+
+        width: 26.688rem;
+    }
+    .descricao__intro__banner__estrategias{
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--regular);
+        line-height: var(--line-28);
+        color: var(--text-gray-100);
+
+        margin: 0%;
+
+        width: 45.313rem;
+    }
+    .secao__lista__estrategias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 24.663rem;
+    }
+    .lista__estrategias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: 80vw;
+    }
+    .item__lista__estrategias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+
+        height: 24.663rem;
+    }
+    .item__lista__estrategias:nth-child(1){
+        background-image: url("../../../Assets/Home/linha-gap.svg");
+        background-position: center right;
+        background-repeat: no-repeat;
+        padding-right: 5.563rem;
+    }
+    .item__lista__estrategias:nth-child(2){
+        background-image: url("../../../Assets/Home/linha-gap.svg");
+        background-position: center right;
+        background-repeat: no-repeat;
+        padding-right: 5.563rem;
+        padding-left: 5.563rem;
+    }
+    .item__lista__estrategias:nth-child(3){
+        padding-left: 5.563rem;
+    }
+    .imagem__lista__estrategias{
+        height: 11.006rem;
+        width: 11.063rem;
+        margin-bottom: 5.158rem;
+    }
+    .titulo__lista__estrategias{
+        font-family: var(--inter);
+        font-size: var(--font-24);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-37);
+        color: var(--black);
+        margin-bottom: 1.5rem;
+
+        align-self: flex-start;
+    }
+    .descricao__lista__estrategias{
+        font-family: var(--inter);
+        font-size: var(--font-16);
+        font-weight: var(--regular);
+        line-height: var(--line-25);
+        color: var(--text-gray-100);
+
+        margin: 0%;
+    }
+    /*-------------HISTORIA-----------*/
+    .secao__historia{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+
+        width: 100vw;
+
+        padding-top: 6.5rem;
+        padding-right: 5.563rem;
+    }
+    .secao__banner__historia{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5.313rem;
+    }   
+    .titulo__banner__historia{
+        font-family: var(--inter);
+        font-size: var(--font-40);
+        font-weight: var(--regular);
+        line-height: var(--line-48);
+        color: var(--black);
+
+        padding-left: 2.813rem;
+    }
+    .imagem__banner__historia{
+        width: 41rem;
+        height: auto;
+    }
+    .secao__info__historia{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8.125rem;
+    }
+    .container__descricao__info__historia{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+
+        width: 38rem;
+    }
+    .info__historia{
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--regular);
+        line-height: var(--line-28);
+        color: var(--black);
+
+        margin: 0%;
+    }
+    .lista__numeros__historia{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6.375rem;
+        
+
+        padding-left: 1.375rem;
+    }
+    .item__lista__numeros__historia{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .titulo__item__lista__numeros__historia{
+        font-family: var(--inter);
+        font-size: var(--font-60);
+        font-weight: var(--medium);
+        line-height: var(--line-73);
+        color: var(--black);
+    }
+    .descricao__item__lista__numeros__historia{
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--regular);
+        line-height: var(--line-28);
+        color: var(--text-gray-100);
+        width: 15.25rem;
+    }
+    /*-----------------TECNOLOGIA-----------------*/
+    .secao__tecnologia{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+
+        width: 100vw;
+
+        background-color: #202125;
+
+        padding-bottom: 10.188rem;
+    }
+    .container__info__tecnologia{
+        width: 93.65vw;
+        height: 26.125rem;
+        background-image: url("../../../Assets/Institucional/Imagens/imagem-eco-it.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    /*-------------CAROUSEL-INSTITUCIONAL-------------*/
+    .secao__depoimentos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11.125rem;
+
+        background-color: var(--white);
+
+        padding-top: 7.125rem;
+        padding-bottom: 10.625rem;
+    }
+    .secao__cabecalho__depoimentos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 93.65vw;
+    }
+    .titulo__cabecalho__depoimentos{
+        font-family: var(--inter);
+        font-size: var(--font-40);
+        font-weight: var(--regular);
+        line-height: var(--line-48);
+        color: var(--black);
+
+        width: 25.375rem;
+    }
+    .carousel__indicadores{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .carousel__indicador{
+        font-family: var(--inter);
+        font-size: var(--font-20);
+        font-weight: var(--regular);
+        line-height: var(--line-24);
+        color: var(--text-gray-40);
+
+        background-color: transparent;
+        border: none;
+
+        padding: 0.875rem 1.531rem;
+
+        transition: all .25s ease-in-out;
+    }
+    .carousel__indicador--ativo{
+        font-family: var(--inter);
+        font-size: var(--font-20);
+        font-weight: var(--medium);
+        line-height: var(--line-24);
+        color: var(--black);
+
+        border-bottom: 2px solid var(--primary-100);
+
+        transition: all .25s ease-in-out;
+    }
+    .botao__carrousel-depoimentos{
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+
+        width: 2.375rem;
+        height: 2.375rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .secao__container__carousel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 93.65vw;
+    }
+    .container__carousel{
+        width: 66vw;
+
+        overflow-x: hidden;
+    }
+    .lista__depoimentos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: 280vw;
+
+        overflow-x: hidden;
+
+        transition: all .4s ease-in-out;
+    }
+    .item__lista__depoimentos{
+        width: 66vw;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .imagem__depoimento{
+        width: 8.938rem;
+        height: 8.938rem;
+    }
+    .secao__conteudo__lista__depoimentos{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nome__conteudo__lista__depoimentos{
+        font-family: var(--inter);
+        font-size: var(--font-30);
+        font-weight: var(--medium);
+        line-height: var(--line-40);
+        color: var(--black);
+
+        margin-bottom: 0.25rem;
+    }
+    .subtitulo__conteudo__lista__depoimentos{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--medium);
+        line-height: var(--line-17);
+        color: var(--black);
+
+        margin: 0%;
+        margin-bottom: 0.688rem;
+    }
+    .descricao__conteudo__lista__depoimentos{
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--regular);
+        line-height: var(--line-28);
+        color: var(--text-gray-100);
+
+        margin: 0%;
+    }
+    .carousel__indicadores-descricao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        transition: all .4s ease-out;
+
+        height: 0.25rem;
+        background: rgba(196, 196, 196, 0.2);
+        border-radius: 8px;
+    }
+    .carousel__indicador-descricao{
+        background-color: var(--red-primary);
+        border: none;
+        visibility: hidden;
+        opacity: 0;
+
+        height: 0.25rem;
+        width: 2.25rem;
+
+        border-radius: 8px;
+
+        transition: all .1s ease-in-out;
+    }
+    .carousel__indicador--ativo-descricao{
+        visibility: visible;
+        opacity: 1;
+    }
+}

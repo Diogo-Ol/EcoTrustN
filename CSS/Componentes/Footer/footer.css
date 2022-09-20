@@ -1,0 +1,141 @@
+@media (min-width:0px){
+    .secao__banner__footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5.5rem;
+
+        width: 100vw;
+        height: 46.188rem;
+
+        background-color: #0D0D0D;
+
+        background-image: url("../../../Assets/Footer/Brasil\ CTA\ 1.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+
+        padding-top: 11.938rem;
+        padding-left: 2.813rem;
+    }
+    .titulo__banner__footer{
+        font-family: var(--inter);
+        font-size: var(--font-50);
+        font-weight: var(--medium);
+        line-height: var(--line-63);
+        color: var(--white);
+
+        width: 34.125rem;
+    }
+
+
+    .rodape{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+
+
+        background: #111113;
+        border-top: 1px solid #616161;
+
+        padding-top: 5.625rem;
+        padding-bottom: 2.375rem;
+    }
+    .address__rodape{
+        width: 93.65vw;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-bottom: 3.875rem;
+
+        border-bottom: 1px solid #616161;
+    }
+    .section__redes__rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6.542rem;
+    }
+    .secao__lista__redes__rodape{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 1.375rem;
+    }
+    .link__lista__redes__rodape{
+        width: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .secao__links__rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5.938rem;
+    }
+    .lista__links__rodape{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4.25rem;
+    }
+    .item__lista__links__rodape{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--regular);
+        line-height: var(--line-17);
+        color: var(--white);
+
+        font-style: normal;
+    }
+    .botao__up__pagina{
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        background-color: transparent;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: 2.375rem;
+        height: 2.375rem;
+    }
+    .secao__copyrigth{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 93.65vw;
+    }
+    .texto__copyright{
+        font-family: var(--inter);
+        font-size: var(--font-12);
+        font-weight: var(--regular);
+        line-height: var(--line-16);
+        color: var(--text-gray-60);
+    }
+    .container__links__copyrigth{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.375rem;
+    }
+    .link__copyright{
+        font-family: var(--inter);
+        font-size: var(--font-12);
+        font-weight: var(--regular);
+        line-height: var(--line-16);
+        color: var(--text-gray-60);
+
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,114 @@
+@media (min-width:0px){
+    .secao__noticias{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        background-color: #202125;
+
+        padding-top: 8.188rem;
+        padding-bottom: 10.375rem;
+
+        width: 100vw;
+    }
+    .secao__cabecalho__noticias{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        width: 96.825vw;
+
+        margin-bottom: 4rem;
+    }
+    .titulo__cabecalho__noticias{
+        font-family: var(--inter);
+        font-size: var(--font-40);
+        font-weight: var(--regular);
+        line-height: var(--line-48);
+        color: var(--white);
+    }   
+    .secao__container__carousel__noticias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 96.825vw;
+    }
+    .container__carousel__noticias{
+        width: 96.825vw;
+        
+        overflow: hidden;
+    }
+    .lista__noticias{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+
+        width: 300vw;
+
+        transition: all .3s ease-in-out;
+    }
+    .item__lista__noticias{
+        width: 34.063rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+
+        padding-top: 2.125rem;
+        padding-left: 2.375rem;
+        padding-bottom: 2.125rem;
+        padding-right: 2.375rem;
+
+        background-color: #2F3137;
+    }
+    .descricao__conteudo__lista__noticias{
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--regular);
+        line-height: var(--line-28);
+        color: var(--white);
+
+        margin: 0%;
+    }
+    .container__botoes__carousel__noticias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.875rem;
+
+        width: 96.825vw;
+
+        margin-top: 4.875rem;
+
+        padding-right: 2.813rem;
+    }
+    .botao__carrousel-noticias{
+        background-color: transparent;
+        border: 1px solid var(--white);
+        border-radius: 50%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: 2.375rem;
+        height: 2.375rem;
+
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .link__lista__noticias{
+        font-family: var(--inter);
+        font-size: var(--font-24);
+        font-weight: var(--regular);
+        line-height: var(--line-37);
+        color: #999999;
+
+        text-decoration: underline;
+    }
+}

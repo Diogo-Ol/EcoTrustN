@@ -1,0 +1,168 @@
+@media (min-width:0px){
+    .secao__contato{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100vw;
+
+        background-color: #0D0D0D;
+        background-image: url("../../../Assets/Contato/FundoCinza.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100vw 40.625rem  ;
+    }
+    .secao__dados__contato{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        margin-top: 6rem;
+
+        padding-top: 2.875rem;
+        padding-left: 2.5rem;
+        padding-bottom: 2.5rem;
+
+        background-color: var(--neutral--60);
+
+        height: 34.625rem;
+        width: 28.75rem;
+    }
+    .container__intro__dados__contato{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+    .titulo__intro__dados__contato{
+        font-family: var(--inter);
+        font-size: var(--font-30);
+        font-weight: var(--medium);
+        line-height: var(--line-40);
+        color: var(--white);
+
+        width: 18.563rem;
+    }
+    .link__contato__whatsapp{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-17);
+        color: var(--white);
+
+        border: 1px solid #767B8A;
+
+        padding-top: 0.719rem;
+        padding-bottom: 0.719rem;
+        padding-left: 1.25rem;
+        padding-right: 1.354rem;
+    }
+    .container__info__dados__contato{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    .numero__info__dados__contato{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-17);
+        color: var(--text-gray-60);
+    }
+    .local__info__dados__contato{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-17);
+        color: var(--text-gray-60);
+    }
+    .formulario__contato{
+        height: 54.125rem;
+        width: 41.25rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+
+        background-color: var(--white);
+
+        padding-top: 2.5rem;
+        padding-left: 2.188rem;
+        padding-right: 2.188rem;
+        padding-bottom: 2.313rem;
+    }
+    .container__input__formulario__contato{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .label__input__formulario__contato{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-17);
+        color: var(--black);
+    }
+    .input__formulario__contato{
+        font-family: var(--inter);
+        font-size: var(--font-16);
+        font-weight: var(--regular);
+        line-height: var(--line-25);
+        color: var(--black);
+
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+
+        width: 36.875rem;
+        outline: none;
+
+        transition: all .15s ease-in-out;
+    }
+    .input__mensagem__formulario{
+        height: 5rem;
+    }
+    .input__formulario__contato:focus{
+        border-bottom: 1px solid black;
+
+        transition: all .15s ease-in-out;
+    }
+    input:focus{
+        outline: none;
+    }
+    .botao__enviar__formulario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+        padding-top: 1.313rem;
+        padding-left: 1.5rem;
+        padding-right: 1.75rem;
+        padding-bottom: 1.313rem;
+
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--semi-bold);
+        line-height: var(--line-17);
+        color: var(--white);
+        background-color: var(--black);
+        border: 1px solid var(--black);
+        transition: all .2s ease-in-out;
+    }
+    .botao__enviar__formulario:hover{
+        background-color: #2F3137;
+
+        transition: all .2s ease-in-out;
+    }
+}
